@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="Educational_dashboard_template" xml:space="preserve">
+
+<t t-name="EducationalDashboard">
+    <div class="edb_dash o_action">
+    <div class="edb_scroll">
+
+        <!-- ===================== HEADER ===================== -->
+        <div class="edb_header">
+            <div class="edb_brand">
+                <img src="/web/binary/company_logo"
+                     alt="Company Logo" class="edb_logo"/>
+                <div>
+                    <h2 class="edb_title">Educational Dashboard</h2>
+                    <span class="edb_date" t-esc="todayLabel"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== ANNOUNCEMENT TICKER ===================== -->
+        <div t-if="!state.loading and state.announcements.length"
+             class="edb_ticker" role="marquee" aria-label="Announcements">
+            <span class="edb_ticker_label">
+                <i class="fa fa-bullhorn me-1"/>NOTICE:
+            </span>
+            <div class="edb_ticker_viewport">
+                <div class="edb_ticker_track"
+                     t-attf-style="animation-duration: {{ tickerDuration }}s">
+                    <!-- Content rendered twice for a seamless loop -->
+                    <t t-foreach="[0, 1]" t-as="loop" t-key="loop">
+                        <span class="edb_ticker_group"
+                              t-att-aria-hidden="loop ? 'true' : undefined">
+                            <t t-foreach="state.announcements" t-as="ann"
+                               t-key="loop + '_' + ann.id">
+                                <span t-att-class="'edb_ticker_item'
+                                        + (ann.priority === 'high'
+                                            ? ' edb_ticker_high' : '')">
+                                    <i t-if="ann.priority === 'high'"
+                                       class="fa fa-exclamation-circle me-1"/>
+                                    <b class="edb_ticker_name" t-esc="ann.name"/>
+                                    <span class="edb_ticker_sep">—</span>
+                                    <t t-esc="ann.message"/>
+                                </span>
+                            </t>
+                        </span>
+                    </t>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== LOADING ===================== -->
+        <div t-if="state.loading" class="edb_loading">
+            <i class="fa fa-circle-o-notch fa-spin fa-2x"/>
+        </div>
+
+        <t t-if="!state.loading">
+
+            <!-- ============ FACULTY PERSONAL VIEW (non-manager) ============ -->
+            <t t-if="!state.allowed">
+                <t t-if="state.facultySelf">
+                    <!-- My attendance -->
+                    <div class="edb_card edb_section">
+                        <div class="edb_section_head">
+                            <h5 class="edb_section_title">
+                                <i class="fa fa-user-circle-o me-2"/>My Attendance
+                            </h5>
+                            <span t-if="state.facultySelf.my_attendance.available"
+                                  t-att-class="myStatusChipClass(state.facultySelf.my_attendance.today_status)"
+                                  t-esc="state.facultySelf.my_attendance.today_label"/>
+                        </div>
+                        <div t-if="state.facultySelf.my_attendance.available"
+                             class="edb_minis">
+                            <div class="edb_mini edb_mini_rate">
+                                <span class="edb_mini_label">This Month</span>
+                                <span class="edb_mini_value">
+                                    <t t-esc="state.facultySelf.my_attendance.month_rate"/>%
+                                </span>
+                            </div>
+                        </div>
+                        <div t-else="" class="edb_hint">Attendance tracking is
+                            not enabled for your account.</div>
+                    </div>
+
+                    <!-- My division(s), only when class in-charge -->
+                    <div t-if="state.facultySelf.divisions.length"
+                         class="edb_card edb_section">
+                        <h5 class="edb_section_title mb-3">
+                            <i class="fa fa-users me-2"/>My Class Today
+                        </h5>
+                        <div class="edb_div_grid">
+                            <div t-foreach="state.facultySelf.divisions"
+                                 t-as="div" t-key="div.division_id"
+                                 t-att-class="'edb_div_card edb_div_' + div.status"
+                                 role="button"
+                                 t-on-click="() => this.openDivision(div)">
+                                <div class="edb_div_name" t-esc="div.division"/>
+                                <div t-if="div.status === 'updated'"
+                                     class="edb_div_stats">
+                                    <span class="edb_t_total">
+                                        <i class="fa fa-users"/> <t t-esc="div.total"/></span>
+                                    <span class="edb_t_present">
+                                        <i class="fa fa-check"/> <t t-esc="div.present"/></span>
+                                    <span class="edb_t_absent">
+                                        <i class="fa fa-times"/> <t t-esc="div.absent"/></span>
+                                </div>
+                                <div t-else="" class="edb_div_status">
+                                    <i class="fa fa-clock-o"/>
+                                    <t t-esc="divisionStatusLabel(div.status)"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+                <div t-else="" class="edb_card edb_locked">
+                    <i class="fa fa-lock"/>
+                    <h5>Institution data is available to the Principal and
+                        Office Admin only.</h5>
+                    <p class="text-muted mb-0">You can still load your pending
+                        tasks and exam valuations below.</p>
+                </div>
+            </t>
+
+            <!-- ===================== SUMMARY CARDS ===================== -->
+            <div t-if="state.allowed" class="edb_cards">
+                <div class="edb_card edb_stat edb_stat_teal" role="button"
+                     t-on-click="() => this.openCard('faculties')">
+                    <div class="edb_stat_top">
+                        <i class="fa fa-users"/>
+                        <span class="edb_stat_label">Faculties</span>
+                    </div>
+                    <div class="edb_stat_value"
+                         t-esc="state.data.cards.faculties"/>
+                    <div class="edb_stat_split">
+                        <span><i class="fa fa-male"/>
+                            <t t-esc="state.data.cards.faculty_male"/></span>
+                        <span><i class="fa fa-female"/>
+                            <t t-esc="state.data.cards.faculty_female"/></span>
+                    </div>
+                </div>
+
+                <div class="edb_card edb_stat edb_stat_dark" role="button"
+                     t-on-click="() => this.openCard('students')">
+                    <div class="edb_stat_top">
+                        <i class="fa fa-graduation-cap"/>
+                        <span class="edb_stat_label">Students</span>
+                    </div>
+                    <div class="edb_stat_value"
+                         t-esc="state.data.cards.students"/>
+                    <div class="edb_stat_split">
+                        <span><i class="fa fa-male"/>
+                            <t t-esc="state.data.cards.student_male"/></span>
+                        <span><i class="fa fa-female"/>
+                            <t t-esc="state.data.cards.student_female"/></span>
+                    </div>
+                </div>
+
+                <div class="edb_card edb_stat edb_stat_amber" role="button"
+                     t-on-click="() => this.openCard('exams')">
+                    <div class="edb_stat_top">
+                        <i class="fa fa-file-text-o"/>
+                        <span class="edb_stat_label">Exams</span>
+                    </div>
+                    <div class="edb_stat_value"
+                         t-esc="state.data.cards.exams"/>
+                    <div class="edb_stat_split">
+                        <span><i class="fa fa-play-circle"/>
+                            <t t-esc="state.data.cards.exam_ongoing"/> Ongoing</span>
+                        <span><i class="fa fa-check-circle"/>
+                            <t t-esc="state.data.cards.exam_closed"/> Closed</span>
+                    </div>
+                </div>
+
+                <div class="edb_card edb_stat edb_stat_slate" role="button"
+                     t-att-class="state.data.faculty_attendance ? '' : 'edb_disabled'"
+                     t-on-click="openFacultyAttendanceDashboard">
+                    <div class="edb_stat_top">
+                        <i class="fa fa-calendar-check-o"/>
+                        <span class="edb_stat_label">Faculty Attendance</span>
+                    </div>
+                    <t t-if="state.data.faculty_attendance">
+                        <div class="edb_stat_value">
+                            <t t-esc="state.data.faculty_attendance.month_rate"/>%
+                        </div>
+                        <div class="edb_stat_split">
+                            <span><i class="fa fa-check"/>
+                                <t t-esc="state.data.faculty_attendance.today_present"/> Present</span>
+                            <span><i class="fa fa-times"/>
+                                <t t-esc="state.data.faculty_attendance.today_leave
+                                          + state.data.faculty_attendance.today_med_leave"/> On Leave</span>
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <div class="edb_stat_value">—</div>
+                        <div class="edb_stat_split">
+                            <span>Module not installed</span>
+                        </div>
+                    </t>
+                </div>
+            </div>
+
+            <!-- ===================== STUDENT ATTENDANCE ===================== -->
+            <div t-if="state.allowed" class="edb_card edb_section">
+                <div class="edb_section_head">
+                    <h5 class="edb_section_title">
+                        <i class="fa fa-bar-chart me-2"/>Today's Student Attendance
+                    </h5>
+                    <div class="edb_ratio">
+                        <span class="edb_ratio_txt">
+                            <t t-esc="state.data.attendance.updated_divisions"/> /
+                            <t t-esc="state.data.attendance.total_divisions"/>
+                            divisions updated (<t t-esc="divisionRatio"/>%)
+                        </span>
+                        <div class="edb_ratio_bar">
+                            <div class="edb_ratio_fill"
+                                 t-attf-style="width: {{ divisionRatio }}%"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edb_minis">
+                    <div class="edb_mini">
+                        <span class="edb_mini_label">Total</span>
+                        <span class="edb_mini_value"
+                              t-esc="state.data.attendance.total_students"/>
+                    </div>
+                    <div class="edb_mini edb_mini_good">
+                        <span class="edb_mini_label">Present</span>
+                        <span class="edb_mini_value"
+                              t-esc="state.data.attendance.today_present"/>
+                    </div>
+                    <div class="edb_mini edb_mini_bad">
+                        <span class="edb_mini_label">Absent</span>
+                        <span class="edb_mini_value"
+                              t-esc="state.data.attendance.today_absent"/>
+                    </div>
+                    <div class="edb_mini edb_mini_amber">
+                        <span class="edb_mini_label">Homeworks</span>
+                        <span class="edb_mini_value"
+                              t-esc="state.data.attendance.today_homeworks"/>
+                    </div>
+                </div>
+
+                <div class="edb_div_grid">
+                    <div t-foreach="state.data.attendance.division_summary"
+                         t-as="div" t-key="div.division_id"
+                         t-att-class="'edb_div_card edb_div_' + div.status"
+                         role="button"
+                         t-on-click="() => this.openDivision(div)">
+                        <div class="edb_div_name" t-esc="div.division"/>
+                        <div t-if="div.status === 'updated'" class="edb_div_stats">
+                            <span class="edb_t_total">
+                                <i class="fa fa-users"/> <t t-esc="div.total"/></span>
+                            <span class="edb_t_present">
+                                <i class="fa fa-check"/> <t t-esc="div.present"/></span>
+                            <span class="edb_t_absent">
+                                <i class="fa fa-times"/> <t t-esc="div.absent"/></span>
+                        </div>
+                        <div t-else="" class="edb_div_status">
+                            <i class="fa fa-clock-o"/>
+                            <t t-esc="divisionStatusLabel(div.status)"/>
+                        </div>
+                        <div class="edb_div_hw">
+                            <i class="fa fa-book"/> Homeworks:
+                            <t t-esc="div.div_homeworks"/>
+                        </div>
+                    </div>
+                    <div t-if="!state.data.attendance.division_summary.length"
+                         class="edb_empty">No divisions found</div>
+                </div>
+            </div>
+
+            <!-- ===================== FACULTY ATTENDANCE ===================== -->
+            <div t-if="state.allowed and state.data.faculty_attendance"
+                 class="edb_card edb_section">
+                <div class="edb_section_head">
+                    <h5 class="edb_section_title">
+                        <i class="fa fa-calendar-check-o me-2"/>Faculty Attendance
+                        <span t-if="state.data.faculty_attendance.sheet_info"
+                              t-att-class="'edb_chip ' + (
+                                  !state.data.faculty_attendance.sheet_info.exists
+                                      ? 'edb_chip_muted'
+                                      : state.data.faculty_attendance.sheet_info.state === 'draft'
+                                          ? 'edb_chip_amber' : 'edb_chip_teal')">
+                            <t t-if="!state.data.faculty_attendance.sheet_info.exists">No Sheet Today</t>
+                            <t t-elif="state.data.faculty_attendance.sheet_info.state === 'draft'">Draft</t>
+                            <t t-else="">Validated</t>
+                        </span>
+                    </h5>
+                    <div class="edb_actions">
+                        <button class="edb_btn edb_btn_teal"
+                                t-on-click="openFacultyAttendanceEntry">
+                            <i class="fa fa-pencil-square-o me-1"/>Mark Attendance
+                        </button>
+                        <button class="edb_btn edb_btn_outline"
+                                t-on-click="openFacultyAttendanceDashboard">
+                            <i class="fa fa-line-chart me-1"/>Full Dashboard
+                        </button>
+                    </div>
+                </div>
+
+                <div class="edb_minis">
+                    <div class="edb_mini edb_mini_good">
+                        <span class="edb_mini_label">Present</span>
+                        <span class="edb_mini_value"
+                              t-esc="state.data.faculty_attendance.today_present"/>
+                    </div>
+                    <div class="edb_mini edb_mini_bad">
+                        <span class="edb_mini_label">Leave</span>
+                        <span class="edb_mini_value"
+                              t-esc="state.data.faculty_attendance.today_leave"/>
+                    </div>
+                    <div class="edb_mini edb_mini_amber">
+                        <span class="edb_mini_label">On Duty</span>
+                        <span class="edb_mini_value"
+                              t-esc="state.data.faculty_attendance.today_on_duty"/>
+                    </div>
+                    <div class="edb_mini">
+                        <span class="edb_mini_label">Med Leave</span>
+                        <span class="edb_mini_value"
+                              t-esc="state.data.faculty_attendance.today_med_leave"/>
+                    </div>
+                    <div class="edb_mini">
+                        <span class="edb_mini_label">Not Marked</span>
+                        <span class="edb_mini_value"
+                              t-esc="state.data.faculty_attendance.today_unmarked"/>
+                    </div>
+                    <div class="edb_mini edb_mini_rate">
+                        <span class="edb_mini_label">Month Rate</span>
+                        <span class="edb_mini_value">
+                            <t t-esc="state.data.faculty_attendance.month_rate"/>%
+                        </span>
+                    </div>
+                </div>
+
+                <div class="edb_table_head">
+                    <h6 class="edb_subtitle">Teachers — This Month</h6>
+                    <input type="text" class="edb_search"
+                           placeholder="Search teacher / roll…"
+                           t-model="state.teacherSearch"/>
+                </div>
+                <div class="edb_table_scroll">
+                    <table class="edb_table">
+                        <thead>
+                            <tr>
+                                <th class="text-end">Roll</th>
+                                <th>Teacher</th>
+                                <th class="text-end">Present</th>
+                                <th class="text-end">Leave</th>
+                                <th class="edb_rate_col">Attendance %</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="filteredTeachers" t-as="teacher"
+                                t-key="teacher.id" role="button"
+                                t-on-click="() => this.openTeacher(teacher)">
+                                <td class="text-end edb_roll" t-esc="teacher.roll"/>
+                                <td t-esc="teacher.name"/>
+                                <td class="text-end" t-esc="teacher.present"/>
+                                <td class="text-end" t-esc="teacher.leave"/>
+                                <td>
+                                    <div class="edb_rate_wrap">
+                                        <div class="edb_rate_bar">
+                                            <div class="edb_rate_fill"
+                                                 t-attf-style="width: {{ teacher.rate }}%"/>
+                                        </div>
+                                        <span class="edb_rate_txt">
+                                            <t t-esc="teacher.rate"/>%
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr t-if="!filteredTeachers.length">
+                                <td colspan="5" class="edb_empty">No attendance
+                                    marked this month.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ===================== TASKS (on-demand) ===================== -->
+            <div class="edb_card edb_section">
+                <div class="edb_section_head">
+                    <h5 class="edb_section_title">
+                        <i class="fa fa-tasks me-2"/>
+                        <t t-if="state.allowed">Teacher Tasks</t>
+                        <t t-else="">My Tasks</t>
+                    </h5>
+                    <button class="edb_btn edb_btn_teal"
+                            t-att-disabled="state.tasks.loading"
+                            t-on-click="loadTasks">
+                        <i t-att-class="'fa me-1 ' + (state.tasks.loading
+                            ? 'fa-spinner fa-spin'
+                            : state.tasks.loaded ? 'fa-refresh' : 'fa-download')"/>
+                        <t t-if="state.tasks.loading">Loading…</t>
+                        <t t-elif="state.tasks.loaded">Refresh</t>
+                        <t t-else="">Load Tasks</t>
+                    </button>
+                </div>
+                <div t-if="state.tasks.loaded" class="edb_table_scroll">
+                    <table class="edb_table">
+                        <thead>
+                            <tr>
+                                <th>Teacher</th><th>Task</th>
+                                <th>Date</th><th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="state.tasks.rows" t-as="task"
+                                t-key="task.id" role="button"
+                                t-on-click="() => this.openTask(task)">
+                                <td t-esc="task.teacher_name"/>
+                                <td t-esc="task.task_name"/>
+                                <td t-esc="task.date"/>
+                                <td><span class="edb_chip edb_chip_amber"
+                                          t-esc="task.state"/></td>
+                            </tr>
+                            <tr t-if="!state.tasks.rows.length">
+                                <td colspan="4" class="edb_empty">No open tasks.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div t-else="" class="edb_hint">Click "Load Tasks" to fetch
+                    pending teacher tasks.</div>
+            </div>
+
+            <!-- ===================== EXAM VALUATIONS (on-demand) ===================== -->
+            <div class="edb_card edb_section">
+                <div class="edb_section_head">
+                    <h5 class="edb_section_title">
+                        <i class="fa fa-check-square-o me-2"/>
+                        <t t-if="state.allowed">Exam Valuations</t>
+                        <t t-else="">My Exam Valuations</t>
+                    </h5>
+                    <button class="edb_btn edb_btn_teal"
+                            t-att-disabled="state.valuations.loading"
+                            t-on-click="loadValuations">
+                        <i t-att-class="'fa me-1 ' + (state.valuations.loading
+                            ? 'fa-spinner fa-spin'
+                            : state.valuations.loaded ? 'fa-refresh' : 'fa-download')"/>
+                        <t t-if="state.valuations.loading">Loading…</t>
+                        <t t-elif="state.valuations.loaded">Refresh</t>
+                        <t t-else="">Load Valuations</t>
+                    </button>
+                </div>
+                <div t-if="state.valuations.loaded" class="edb_table_scroll">
+                    <table class="edb_table">
+                        <thead>
+                            <tr>
+                                <th>Exam</th><th>Subject</th>
+                                <th>Class</th><th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="state.valuations.rows" t-as="valuation"
+                                t-key="valuation.id" role="button"
+                                t-on-click="() => this.openValuation(valuation)">
+                                <td t-esc="valuation.exam_name"/>
+                                <td t-esc="valuation.subject_name"/>
+                                <td><t t-esc="valuation.class_name"/> -
+                                    <t t-esc="valuation.division_name"/></td>
+                                <td><span class="edb_chip edb_chip_amber"
+                                          t-esc="valuation.state"/></td>
+                            </tr>
+                            <tr t-if="!state.valuations.rows.length">
+                                <td colspan="4" class="edb_empty">No draft
+                                    valuations.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div t-else="" class="edb_hint">Click "Load Valuations" to fetch
+                    pending exam valuations.</div>
+            </div>
+        </t>
+    </div>
+    </div>
+</t>
+
+</templates>

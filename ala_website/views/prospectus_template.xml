@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+<!--    About MIS-->
+    <template id="ala_propectus_page" name="Prospectus">
+        <t t-call="website.layout">
+            <div class="container-fluid mt-2" >
+                <section class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"  data-vcss="001" data-snippet="s_title" data-scroll-background-ratio="1">
+                    <span class="s_parallax_bg oe_img_bg" style="background-position: 50% 0;">
+                        <img src="https://st.annes.school/media/images/page_images/about/institution/4.webp"/>
+                    </span>
+                    <div class="o_we_bg_filter bg-black-50"/>
+                    <div class="container">
+                        <h1>About</h1>
+                    </div>
+                </section>
+<!--                tabs-->
+                <section class="s_tabs pt48 pb48 o_colored_level" data-vcss="001" data-snippet="s_tabs" data-name="Tabs" style="background-image: none;">
+                    <div class="container glow-background">
+                        <div class="s_tabs_main">
+                            <div class="s_tabs_nav mb-3">
+                                <ul class="nav nav-pills" role="tablist">
+            <!--                        Menu About St.Anne's-->
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link o_default_snippet_text active" id="nav_tabs_link_about_mis" data-bs-toggle="tab" href="#nav_tabs_content_about_mis"
+                                            role="tab" aria-controls="nav_tabs_content_about_mis" aria-selected="true">St.ANNE'S</a>
+                                    </li>
+            <!--                        Menu Institution-->
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link o_default_snippet_text " id="nav_tabs_link_oblates" data-bs-toggle="tab" href="#nav_tabs_content_oblates"
+                                            role="tab" aria-controls="nav_tabs_content_oblates" aria-selected="true">INSTITUTION</a>
+                                    </li>
+            <!--                        Menu Management-->
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link o_default_snippet_text" id="nav_tabs_link_omi_education" data-bs-toggle="tab" href="#nav_tabs_content_omi_education"
+                                           role="tab" aria-controls="nav_tabs_content_omi_education" aria-selected="true">MANAGEMENT</a>
+                                    </li>
+            <!--                        Menu Aim and Objectives-->
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link o_default_snippet_text" id="nav_tabs_link_vision_mission" data-bs-toggle="tab" href="#nav_tabs_content_vision_mission"
+                                           role="tab" aria-controls="nav_tabs_content_vision_mission" aria-selected="true">AIM AND OBJECTIVES</a>
+                                    </li>
+            <!--                        Menu Our Foundress-->
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link o_default_snippet_text" id="nav_tabs_link_our_foundress" data-bs-toggle="tab" href="#nav_tabs_content_our_foundress"
+                                            role="tab" aria-controls="nav_tabs_link_governing_menbers" aria-selected="false">OUR FOUNDRESS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="s_tabs_content tab-content">
+<!--                    Content About St.Anne's-->
+
+                                <div class="tab-pane fade active show" id="nav_tabs_content_about_mis" role="tabpanel" aria-labelledby="nav_tabs_content_about_mis">
+                                <section class="s_media_list pt15 pb15 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List"
+                                             data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/09_001&quot;,&quot;flip&quot;:[]}" style="background-image: none;">
+                                        <div class="container">
+<!--                                            <div class="row s_nb_column_fixed s_col_no_bgcolor">-->
+                                                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center o_colored_level">
+                                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
+                                                            <img src="/web_editor/image_shape/website.s_media_list_default_image_1/web_editor/composition/composition_square_1.svg?c1=o-color-4&amp;c2=o-color-2"
+                                                                class="s_media_list_img h-100 w-100" alt="" data-shape="web_editor/composition/composition_square_1" data-original-mimetype="image/jpeg"
+                                                                data-file-name="s_media_list_1.svg" data-shape-colors="o-color-4;o-color-2;;;" loading="lazy" data-original-id="235"
+                                                                data-original-src="/theme_anelusia/static/src/img/snippets/s_media_list_1.jpg" data-mimetype="image/svg+xml" style=""></img>
+                                                        </div>
+                                                        <div class="s_media_list_body col-lg-6">
+                                                            <h3 id="ala_about_us" class="o_default_snippet_text">
+                                                                <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">PATRONESS OF OUR CONGREGATION.....</span></h3>
+                                                            <p>
+                                                                St. Anne is the Patroness of our Congregation. The name 'Anne' means'GRACE'. Tradition refers to St. Anne as being the Mother of Virgin Mary, Mother of Jesus.
+                                                                <br></br>
+                                                                <br></br>
+                                                                Anne was born in Bethlehem and was married to Joachim from Nazareth in Galilee. Even after twenty years of marriage the couple had no children. So Joachim went into a desert to plead with God to bless them with a child. He spent a long time in fasting and prayer in the desert. Finally, God heard the prayers of Joachim and Anne and blessed them with a girl child.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        After the child was born, Joachim and Anne named her 'Mary' and dedicated her to God. The child Mary spent much of her childhood at the temple of Jerusalem. When Mary was fourteen years old, she was betrothed to Joseph of Nazareth. And so Mary's story continues with the birth of her son Jesus and His life on earth.
+                                                        <br></br>
+                                                        <br></br>
+                                                        The life of St. Anne and her connection as Holy Mother of Mary and Grandmother of Jesus has been very popular among all the Christians in the world. The Feast of St. Anne and St. Joachim is celebrated every year on the 26th of July. St. Anne is honored as the Patron Saint for Education. There are numerous educational institutions in her name run by various Societies and organizations which includes our own St. Anne's Congregation.
+                                                    </p>
+                                                </div>
+<!--                                            </div>-->
+                                        </div>
+<!--                                    </section>-->
+                                </section>
+                                </div>
+<!--                        Content Institution-->
+                                <div class="tab-pane fade" id="nav_tabs_content_oblates" role="tabpanel" aria-labelledby="nav_tabs_link_oblates">
+                                <section class="s_media_list pt15 pb15 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List"
+                                             data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/09_001&quot;,&quot;flip&quot;:[]}" style="background-image: none;">
+                                        <div class="container">
+<!--                                            <div class="row s_nb_column_fixed s_col_no_bgcolor">-->
+                                                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center o_colored_level">
+
+                                                        <div class="s_media_list_body col-lg-6">
+                                                            <h3 id="ala_about_us" class="o_default_snippet_text">
+                                                                <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">OBLATES.....</span></h3>
+                                                            <p>
+                                                                St. Anne's School, Chhoto Jagulia, North 24 Parganas, West Bengal is established In 2018, owned by the Society of S of Sisters of St. Anne, Chennal, a body registered under the Society Registration Act1860. It is a Catholic Educational Institution conducted by the Sisters of St. Anne, Chhoto Jagulia a branch of the Society of Sisters of St. Anne.
+                                                                <br></br>
+                                                                <br></br>
+                                                                The Society of Sisters of St. Anne is working practically in all over India through education Institutions, Health Centers, orphanages and other charitable and promotional works. The School admits all children irrespective of caste and creed.
+                                                            </p>
+                                                        </div>
+                                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
+                                                            <img src="/web_editor/image_shape/website.s_media_list_default_image_1/web_editor/composition/composition_square_1.svg?c1=o-color-4&amp;c2=o-color-2"
+                                                                class="s_media_list_img h-100 w-100" alt="" data-shape="web_editor/composition/composition_square_1" data-original-mimetype="image/jpeg"
+                                                                data-file-name="s_media_list_1.svg" data-shape-colors="o-color-4;o-color-2;;;" loading="lazy" data-original-id="235"
+                                                                data-original-src="/theme_anelusia/static/src/img/snippets/s_media_list_1.jpg" data-mimetype="image/svg+xml" style=""></img>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        The course of instruction through the medium of English prepares the girls/boys for the ICSE Examinations of the Council for the Indian School Certificate Examinations.
+                                                    </p>
+                                                </div>
+<!--                                            </div>-->
+                                        </div>
+<!--                                    </section>-->
+                                </section>
+                                </div>
+<!--                            Content Management-->
+                                <div class="tab-pane fade" id="nav_tabs_content_omi_education" role="tabpanel" aria-labelledby="nav_tabs_link_omi_education">
+                                <section class="s_media_list pt15 pb15 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List"
+                                             data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/09_001&quot;,&quot;flip&quot;:[]}" style="background-image: none;">
+                                        <div class="container">
+<!--                                            <div class="row s_nb_column_fixed s_col_no_bgcolor">-->
+                                                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center o_colored_level">
+                                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
+                                                            <img src="/web_editor/image_shape/website.s_media_list_default_image_1/web_editor/composition/composition_square_1.svg?c1=o-color-4&amp;c2=o-color-2"
+                                                                class="s_media_list_img h-100 w-100" alt="" data-shape="web_editor/composition/composition_square_1" data-original-mimetype="image/jpeg"
+                                                                data-file-name="s_media_list_1.svg" data-shape-colors="o-color-4;o-color-2;;;" loading="lazy" data-original-id="235"
+                                                                data-original-src="/theme_anelusia/static/src/img/snippets/s_media_list_1.jpg" data-mimetype="image/svg+xml" style=""></img>
+                                                        </div>
+                                                        <div class="s_media_list_body col-lg-6">
+                                                            <h3 id="ala_about_us" class="o_default_snippet_text">
+                                                                <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">OMI AND EDUCATION.....</span></h3>
+                                                            <p>
+                                                                The management The congregation of Society of sisters of St.Anne is the management of the school. The management consists of President, vice President, Secretary and the Principal .It is deciding body of the school. It decides all that is concerning St.Anne’s school, Chotojagulia. Whatever the management decides is the final decision regarding anything concerning the school.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        We are fortunate and blessed with a team of committed teachers and non-teaching staff.
+                                                        Our parents are a strong support to participate harmoniously to create an educational
+                                                        experience to anyone in the campus by their dynamic activities with the school staff.
+                                                        Anyone can witness a variety of activities that keep the class rooms dynamic and cheerful
+                                                        learning hubs of St.Anne's School campus.
+                                                    </p>
+                                                </div>
+<!--                                            </div>-->
+                                        </div>
+<!--                                    </section>-->
+                                </section>
+                                </div>
+<!--                                Content Aim and Objectives-->
+                                <div class="tab-pane fade" id="nav_tabs_content_vision_mission" role="tabpanel" aria-labelledby="nav_tabs_link_vision_mission">
+                                <section class="s_media_list pt15 pb15 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List"
+                                             data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/09_001&quot;,&quot;flip&quot;:[]}" style="background-image: none;">
+                                        <div class="container">
+<!--                                            <div class="row s_nb_column_fixed s_col_no_bgcolor">-->
+                                                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center o_colored_level">
+
+                                                        <div class="s_media_list_body col-lg-6">
+                                                            <h3 id="ala_about_us" class="o_default_snippet_text">
+                                                                <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">VISION AND MISSION.....</span></h3>
+                                                            <p>
+                                                                1. The aim of the School is to impart to its pupils sound education and discipline based on moral principles and instill in them the spirit of service and joy and make them useful members of the Society.
+                                                                <br></br>
+                                                                <br></br>
+                                                                2. It works with the Charism of the Society of Sisters of St. Anne, "Fullness in God and Service in Simplicity" by inculcating in them the fear of God, Self-confidence, honesty, sincerity, equality and fraternity. We shall see that every pupil in our School is formed to be a good leader, responsible citizen.
+
+
+                                                            </p>
+                                                        </div>
+                                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
+                                                            <img src="/web_editor/image_shape/website.s_media_list_default_image_1/web_editor/composition/composition_square_1.svg?c1=o-color-4&amp;c2=o-color-2"
+                                                                class="s_media_list_img h-100 w-100" alt="" data-shape="web_editor/composition/composition_square_1" data-original-mimetype="image/jpeg"
+                                                                data-file-name="s_media_list_1.svg" data-shape-colors="o-color-4;o-color-2;;;" loading="lazy" data-original-id="235"
+                                                                data-original-src="/theme_anelusia/static/src/img/snippets/s_media_list_1.jpg" data-mimetype="image/svg+xml" style=""></img>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        3. The constant effort of the well trained staff is to develop the individual personality of each pupil and bring out those qualities which are best and noblest in them. Special attention is given to ensure a value-based education. In order to enable the child choose the higher values of life, such as respect, love, peace, justice, goodness and brotherhood.
+                                                    </p>
+                                                </div>
+<!--                                            </div>-->
+                                        </div>
+<!--                                    </section>-->
+                                </section>
+                                </div>
+<!--                                Content Our Foundress-->
+                                <div class="tab-pane fade" id="nav_tabs_content_our_foundress" role="tabpanel" aria-labelledby="nav_tabs_link_our_foundress">
+                                <section class="s_media_list pt15 pb15 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List"
+                                             data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/09_001&quot;,&quot;flip&quot;:[]}" style="background-image: none;">
+                                        <div class="container">
+<!--                                            <div class="row s_nb_column_fixed s_col_no_bgcolor">-->
+                                                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center o_colored_level">
+
+                                                        <div class="s_media_list_body col-lg-6">
+                                                            <h3 id="ala_about_us" class="o_default_snippet_text">
+                                                                <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">OUR FOUNDRESS.....</span></h3>
+                                                            <p>
+                                                                The Society of Sisters of St. Anne is a Pontifical Congregation. It was chiefly founded for the empowerment of the powerless, the poor and the marginalized. This vision of the Congregation springs from the life and work of the Foundress Thatipathri Gnanamma.
+                                                            </p>
+                                                        </div>
+                                                        <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
+                                                            <img src="/web_editor/image_shape/website.s_media_list_default_image_1/web_editor/composition/composition_square_1.svg?c1=o-color-4&amp;c2=o-color-2"
+                                                                class="s_media_list_img h-100 w-100" alt="" data-shape="web_editor/composition/composition_square_1" data-original-mimetype="image/jpeg"
+                                                                data-file-name="s_media_list_1.svg" data-shape-colors="o-color-4;o-color-2;;;" loading="lazy" data-original-id="235"
+                                                                data-original-src="/theme_anelusia/static/src/img/snippets/s_media_list_1.jpg" data-mimetype="image/svg+xml" style=""></img>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        The sensitivity to the cry of the poor and creative response to the signs of the times defines the core identity of the Congregation. This drives the Sisters to engage themselves in liberative, empowering and life-giving mission for the marginalized involving in many ministries - social, spiritual, cultural, pastoral, medical, educational that manifest in concrete actions the word of God.
+                                                    </p>
+                                                </div>
+<!--                                            </div>-->
+                                        </div>
+<!--                                    </section>-->
+                                </section>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+</template>
+
+<!--    OBLATES-->
+    <template id="ala_oblates" name="Oblates MIS">
+        <t t-call="website.layout">
+            <section
+                    class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
+                    data-vcss="001" data-snippet="s_title"
+                    data-scroll-background-ratio="1">
+                <span class="s_parallax_bg oe_img_bg"
+                      style="background-position: 50% 0;">
+                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                </span>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <h1>OBLATES</h1>
+                </div>
+            </section>
+            <div class="text-center align-items-center award-box awards-area-mobile bg-white d-inline-flex f-w-500 flex-column font-14 gap-2 justify-content-center p-3 position-absolute rounded-3 nine">
+	<img alt="Top Salesforce Partner" height="100" loading="lazy" src="https://relaxripple.in/landing/assets/newExtra/invetory.jpg" style="color:transparent" width="100"></img>
+	<span class="award-title">Top Salesforce Partner</span>
+</div>
+        </t>
+    </template>
+
+<!--    OBLATES-->
+    <template id="omi_and_education" name="OMI and Education">
+        <t t-call="website.layout">
+            <section
+                    class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
+                    data-vcss="001" data-snippet="s_title"
+                    data-scroll-background-ratio="1">
+                <span class="s_parallax_bg oe_img_bg"
+                      style="background-position: 50% 0;">
+                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                </span>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <h1>OMI and Education</h1>
+                </div>
+            </section>
+        </t>
+    </template>
+
+<!--    Vision and Mission-->
+    <template id="mission_and_vission" name="Vision and Mission">
+        <t t-call="website.layout">
+            <section
+                    class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
+                    data-vcss="001" data-snippet="s_title"
+                    data-scroll-background-ratio="1">
+                <span class="s_parallax_bg oe_img_bg"
+                      style="background-position: 50% 0;">
+                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                </span>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <h1>Vision and Mission</h1>
+                </div>
+            </section>
+        </t>
+    </template>
+
+<!--    Governing Body Members-->
+    <template id="govering_body_members" name="Governing Body Members">
+        <t t-call="website.layout">
+            <section
+                    class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
+                    data-vcss="001" data-snippet="s_title"
+                    data-scroll-background-ratio="1">
+                <span class="s_parallax_bg oe_img_bg"
+                      style="background-position: 50% 0;">
+                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                </span>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <h1>Governing Body Members</h1>
+                </div>
+            </section>
+        </t>
+    </template>
+
+<!--    Academic Council-->
+    <template id="academic_council" name="Academic Council">
+        <t t-call="website.layout">
+            <section
+                    class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
+                    data-vcss="001" data-snippet="s_title"
+                    data-scroll-background-ratio="1">
+                <span class="s_parallax_bg oe_img_bg"
+                      style="background-position: 50% 0;">
+                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                </span>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <h1>Academic Council</h1>
+                </div>
+            </section>
+        </t>
+    </template>
+
+<!--    Core Committee-->
+    <template id="core_commitee" name="Core Committee">
+        <t t-call="website.layout">
+            <section
+                    class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
+                    data-vcss="001" data-snippet="s_title"
+                    data-scroll-background-ratio="1">
+                <span class="s_parallax_bg oe_img_bg"
+                      style="background-position: 50% 0;">
+                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                </span>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <h1>Core Committee</h1>
+                </div>
+            </section>
+        </t>
+    </template>
+
+<!--    Academic CouncilAlumni / AE Association-->
+    <template id="alumni_ae_associates" name="Alumni / AE Association">
+        <t t-call="website.layout">
+            <section
+                    class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
+                    data-vcss="001" data-snippet="s_title"
+                    data-scroll-background-ratio="1">
+                <span class="s_parallax_bg oe_img_bg"
+                      style="background-position: 50% 0;">
+                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                </span>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <h1>Alumni / AE Association</h1>
+                </div>
+            </section>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--Kanban view of Education Faculty -->
+<!--    <record id="education_faculty_view_kanban" model="ir.ui.view">-->
+<!--    <field name="name">ala.education.faculty.view.kanban</field>-->
+<!--    <field name="model">ala.education.faculty</field>-->
+<!--    <field name="arch" type="xml">-->
+<!--        <kanban class="o_kanban_view">-->
+<!--            <field name="name"/>-->
+<!--            <field name="last_name"/>-->
+<!--            <field name="email"/>-->
+<!--            <field name="phone"/>-->
+<!--            <field name="image_128"/>-->
+
+<!--            <templates>-->
+<!--                <t t-name="card">-->
+<!--                    <div class="o_kanban_record o_kanban_global_click">-->
+
+<!--                        &lt;!&ndash; Image &ndash;&gt;-->
+<!--                        <div class="o_kanban_image">-->
+<!--                            <img t-if="record.id.raw_value"-->
+<!--                                 t-att-src="'/web/image/ala.education.faculty/' + record.id.raw_value + '/image_128'"-->
+<!--                                 class="o_kanban_image_fill"-->
+<!--                                 alt="Faculty"/>-->
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash; Details &ndash;&gt;-->
+<!--                        <div class="o_kanban_details">-->
+<!--                            <strong class="o_kanban_record_title">-->
+<!--                                <field name="name"/>-->
+<!--                                <field name="last_name"/>-->
+<!--                            </strong>-->
+
+<!--                            <ul class="mt8">-->
+<!--                                <li t-if="record.phone.raw_value">-->
+<!--                                    📞 <field name="phone"/>-->
+<!--                                </li>-->
+<!--                                <li t-if="record.email.raw_value">-->
+<!--                                    ✉ <field name="email"/>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </t>-->
+<!--            </templates>-->
+<!--        </kanban>-->
+<!--    </field>-->
+<!--</record>-->
+
+    <!--Tree view of Education Faculty -->
+    <record id="education_faculty_view_tree" model="ir.ui.view">
+        <field name="name">ala.education.faculty.view.tree</field>
+        <field name="model">ala.education.faculty</field>
+        <field name="arch" type="xml">
+            <list string="Faculty">
+                <field name="name"/>
+                <field name="last_name"/>
+                <field name="gender"/>
+                <field name="date_of_birth"/>
+                <field name="blood_group"/>
+                <field name="email"/>
+                <field name="phone"/>
+            </list>
+        </field>
+    </record>
+    <!--Form view of Education Faculty -->
+    <record id="education_faculty_view_form" model="ir.ui.view">
+        <field name="name">ala.education.faculty.view.form</field>
+        <field name="model">ala.education.faculty</field>
+        <field name="arch" type="xml">
+            <form string="Faculty">
+                <header>
+                    <button name="action_create_employee" type="object"
+                            class="oe_highlight"
+                            string="Create Employee" groups="base.group_user"
+                            help="Click to create employee for this faculty"
+                            invisible="employee_id != False"
+                    />
+                </header>
+                <sheet>
+                    <field name="image" widget="image"
+                           class="oe_left oe_avatar"/>
+                    <div class="oe_title">
+                        <h1>
+                            <table>
+                                <tr>
+                                    <td style="padding-right:10px;">
+                                        <field name="name" required="1"
+                                               placeholder="First Name"/>
+                                    </td>
+                                    <td style="padding-right:10px;">
+                                        <field name="last_name" required="1"
+                                               placeholder="Last Name"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </h1>
+                    </div>
+                    <notebook>
+                        <page string="Faculty Details">
+                            <group>
+                                <group>
+                                    <field name="father_name"/>
+                                    <field name="mother_name"/>
+                                    <field name="guardian_name"/>
+                                    <field name="signature" widget="signature"/>
+                                </group>
+                                <group>
+                                    <field name="degree_id"/>
+                                    <field name="gender"/>
+                                    <field name="roll_seq"/>
+                                    <field name="date_of_join"/>
+                                    <field name="date_of_birth"/>
+                                    <field name="blood_group"/>
+                                </group>
+                            </group>
+                            <group string="Faculty Left Info" >
+                                <field name="faculty_left" widget="boolean_toggle"/>
+                                <field name="faculty_left_reason_id"/>
+                            </group>
+                        </page>
+                        <page string="Contact Details">
+                            <group>
+                                <group>
+                                    <field name="email"/>
+                                    <field name="employee_id" readonly="1"/>
+                                    <field name="user_id" readonly="1" domain="[('share', '=', False)]" options="{'no_create': True, 'no_open':True}"/>
+                                </group>
+                                <group>
+                                    <field name="phone"/>
+                                    <field name="mobile"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Subjects">
+                            <field name="subject_lines_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter
+        open_attachments="True"
+        reload_on_attachment="True"
+        reload_on_follower="True"
+        reload_on_post="True"
+    />
+            </form>
+        </field>
+    </record>
+    <!--Search view of Education Faculty -->
+    <record id="education_faculty_view_search" model="ir.ui.view">
+    <field name="name">ala.education.faculty.search</field>
+    <field name="model">ala.education.faculty</field>
+    <field name="arch" type="xml">
+        <search string="Search Faculties">
+            <field name="name"/>
+            <field name="gender"/>
+            <field name="email"/>
+
+            <group>
+                <filter string="Degree"
+                        name="group_by_degree"
+                        context="{'group_by': 'degree_id'}"/>
+                <filter string="Gender"
+                        name="group_by_gender"
+                        context="{'group_by': 'gender'}"/>
+            </group>
+        </search>
+    </field>
+</record>
+
+    <!--Menu action of Education Faculty -->
+    <record id="education_faculty_action" model="ir.actions.act_window">
+        <field name="name">Faculty</field>
+        <field name="res_model">ala.education.faculty</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('faculty_left', '=', False)]</field>
+        <field name="search_view_id" ref="education_faculty_view_search"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create your first faculty here.
+            </p>
+        </field>
+    </record>
+
+    <!--Menu action of Education Faculty -->
+    <record id="education_left_faculty_action" model="ir.actions.act_window">
+        <field name="name">Faculty</field>
+        <field name="res_model">ala.education.faculty</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('faculty_left', '=', True)]</field>
+        <field name="search_view_id" ref="education_faculty_view_search"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Create your first faculty here.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="education_faculty_menu" name="Faculty Info" sequence="20" groups="ala_education_core.group_education_principal,ala_education_core.group_education_office_admin"
+              web_icon="ala_education_core,static/description/staff.png" />
+
+    <menuitem id="education_faculty_current_menu" name="Faculty Info" sequence="10"
+              parent="education_faculty_menu"
+              action="education_faculty_action"/>
+
+    <menuitem id="education_old_faculty_menu" name="Old Faculty Info" sequence="20" parent="education_faculty_menu"
+              action="education_left_faculty_action"/>
+
+</odoo>

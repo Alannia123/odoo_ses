@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="education_time_table_faculty_view_form" model="ir.ui.view">
+        <field name="name">ala.education.faculty.timetable.view.form</field>
+        <field name="model">ala.education.faculty.timetable</field>
+        <field name="arch" type="xml">
+            <form string="Education Timetable">
+                <header>
+                    <button name="action_set_to_post" class="oe_highlight" type="object" string="Post" invisible="state != 'draft'" groups="ala_education_core.group_education_principal,ala_education_core.group_education_office_admin"/>
+                    <button name="action_reset_to_draft" class="oe_highlight" type="object" string="Reset" invisible="state != 'done'" groups="ala_education_core.group_education_principal,ala_education_core.group_education_office_admin"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" default_focus="1" placeholder="Name" readonly="1"/>
+                        </h1>
+                    </div>
+<!--                    -->
+                    <group>
+                        <group>
+                            <field name="faculty_id" options="{'no_open': True, 'no_create': True}"  readonly="state != 'draft'"
+                                   groups="ala_education_core.group_education_principal,ala_education_core.group_education_office_admin"/>
+                            <field name="academic_year_id" readonly="1" options="{'no_open': True, 'no_create': True}"/>
+                        </group>
+                        <group>
+                            <field name="class_division_id" options="{'no_open': True, 'no_create': True}" readonly="1" />
+                            <field name="file_name" invisible="1"/>
+                            <field name="pdf_file" filename="file_name" widget="binary_preview" readonly="state != 'draft'"  />
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+<!--                    <notebook>-->
+<!--                        <page string="Time Table">-->
+<!--                            <div class="o_timetable_container">-->
+<!--                                <group>-->
+<!--                                    <field name="pre_file_name" invisible="1"/>-->
+<!--                                    <field name="preview_image"-->
+<!--                                           widget="image"-->
+<!--                                           string=""-->
+<!--                                           class="custom_timetable_img"-->
+<!--                                           options="{'preview_image': 'preview_image'}"/>-->
+<!--                                </group>-->
+<!--                            </div>-->
+<!--                        </page>-->
+<!--                    </notebook>-->
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_time_table_faculty_view_list" model="ir.ui.view">
+        <field name="name">ala.education.timetable.faculty.view.list</field>
+        <field name="model">ala.education.faculty.timetable</field>
+        <field name="arch" type="xml">
+            <list string="Education Timetable">
+                <field name="name"/>
+                <field name="faculty_id"/>
+                <field name="academic_year_id"/>
+                <field name="company_id" column_invisible="1"/>
+                <field name="file_name" column_invisible="1"/>
+                <field name="pdf_file" filename="file_name" widget="binary_preview"   />
+                <field name="state" widget="badge" decoration-success="state == 'done'" decoration-info="state == 'draft'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="education_time_table_faculty_action" model="ir.actions.act_window">
+        <field name="name">Faculty Timetable</field>
+        <field name="res_model">ala.education.faculty.timetable</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">You haven't created any timetable yet.</p>
+        </field>
+    </record>
+
+    <menuitem id="education_time_table_faculty_main_menu" web_icon="ala_education_time_table,static/description/fapng.png" name="Faculty Timetable"/>
+    <menuitem id="education_time_table_faculty_sub_sub_menu" name="Timetable" parent="education_time_table_faculty_main_menu" action="education_time_table_faculty_action"/>
+</odoo>

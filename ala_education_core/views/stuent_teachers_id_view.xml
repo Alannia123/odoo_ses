@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+            <record id="education_student_teacher_division_action" model="ir.actions.act_window">
+                <field name="name">Student</field>
+                <field name="res_model">ala.education.student</field>
+                <field name="view_mode">list,form</field>
+                <field name="search_view_id" ref="education_student_search"/>
+                <field name="domain">[('tc_issued', '=', False), ('drop_out', '=', False)]</field>
+            </record>
+
+
+
+
+        <menuitem id="education_student_class_root_menu" name="Students ID" sequence="30"
+                web_icon="ala_education_core,static/description/teacher_id.png"
+              action="education_student_teacher_division_action"/>
+
+
+</odoo>
