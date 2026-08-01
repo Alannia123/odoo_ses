@@ -157,7 +157,7 @@ table {
                     <t t-esc="doc.company_id.street"/> <t t-esc="doc.company_id.street2"/><br/>
                     <t t-esc="doc.company_id.city"/>, <t t-esc="doc.company_id.state_id.name"/> - <t t-esc="doc.company_id.zip"/><br/>
                     <b>Website:</b> <t t-esc="doc.company_id.website"/> &#8212;
-                    <b>Phone:</b> <t t-esc="doc.company_id.mobile"/>
+                    <b>Phone:</b> <t t-esc="doc.company_id.phone"/>
                 </div>
             </td>
         </tr>
@@ -230,7 +230,7 @@ table {
                                 <t t-else=""><br/></t>
                             </td>
                         </tr>
-                        <tr><td><strong>Phone Number (WhatsApp)</strong></td><td>:</td><td><span t-field="doc.mobile"/> / <span t-field="doc.phone"/></td></tr>
+                        <tr><td><strong>Phone Number (WhatsApp)</strong></td><td>:</td><td><span t-field="doc.phone"/> / <span t-field="doc.phone"/></td></tr>
                         <tr><td><strong>Aadhar No</strong></td><td>:</td><td><span t-field="doc.aadhar_no"/></td></tr>
                     </table>
 
