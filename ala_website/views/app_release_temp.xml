@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="app_release_temp" name="St.Anne's School App Download (Animated)">
+    <template id="app_release_temp" name="St.Eugene CBSE School App Download (Animated)">
         <t t-call="website.layout">
             <style>
                 body {
@@ -153,7 +153,7 @@
             </style>
 
             <div class="app-section">
-                <h2>📱 Download St.Annes School App</h2>
+                <h2>📱 Download St.Eugene School App</h2>
                 <p>
                     Experience our smart and seamless <b>School Management App</b>.
                     Stay connected with attendance, homework, notices, and updates — anytime, anywhere!
@@ -186,7 +186,7 @@
                 </div>
 
                 <footer>
-                    <p>© 2025 St.Anne's School • Powered by <b>Alanniainfotechz</b></p>
+                    <p>© 2025 St.Eugene School • Powered by <b>Alanniainfotechz</b></p>
                 </footer>
             </div>
         </t>

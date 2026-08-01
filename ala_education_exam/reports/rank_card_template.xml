@@ -112,7 +112,7 @@
         font-weight:bold;
         color:#222;
         letter-spacing:1px;">
-        Vill. &amp; Post Chhoto Jagulia, P S, Duttapukur, Dist, North 24 Parganas
+        Marianathapuran, Dindigul, Tamil Nadu - 624003
         <span style="font-weight:bold;">
             <t t-esc="academic_year_id.name"/>
         </span>

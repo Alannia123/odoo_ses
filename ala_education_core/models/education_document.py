@@ -10,15 +10,14 @@ class EducationDocument(models.Model):
     _description = "Student Documents"
     _inherit = ['mail.thread']
 
-    @api.model
-    def create(self, vals):
-        """Overriding the create method to assign
-        the sequence for newly creating records"""
-        if vals.get('name', _('New')) == _('New'):
-            vals['name'] = self.env['ir.sequence'].next_by_code(
-                'ala.education.document') or _('New')
-        res = super(EducationDocument, self).create(vals)
-        return res
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if vals.get('name', _('New')) == _('New'):
+                vals['name'] = self.env['ir.sequence'].next_by_code(
+                    'ala.education.document') or _('New')
+        return super().create(vals_list)
 
     def action_verify_document(self):
         """Return the state to done if the documents are perfect"""

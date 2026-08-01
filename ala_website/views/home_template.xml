@@ -36,7 +36,7 @@
     <div class="hero-glass-card fade-in-up">
       <h1 class="hero-title">
         Change the World with <span>Education</span> and
-        <span>Carve</span> Your Child's Future with <span>ST.ANNE'S</span>.
+        <span>Carve</span> Your Child's Future with <span>St.Eugene</span>.
       </h1>
 
       <p class="hero-subtitle">To Sail in the Ocean of Wisdom...</p>
@@ -814,7 +814,7 @@
 
                       <!-- Optional caption -->
                       <div class="video-caption-sc">
-                        <h3>🎓 St.Anne's School</h3>
+                        <h3>🎓 St.Eugene School</h3>
                         <p>Where Knowledge Meets Values</p>
                       </div>
                     </div>
@@ -1087,7 +1087,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   </div>
                   <div class="mis-profile-info">
                     <h4><b><t t-esc="secretary.name"/></b></h4>
-                    <p>Secretary, OMI group of Schools,<br/>St. Eugene English Medium School</p>
+                    <p>Secretary, OMI group of Schools,<br/>St.Eugene English Medium School</p>
                   </div>
                 </div>
               </div>

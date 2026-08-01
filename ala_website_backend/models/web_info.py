@@ -27,7 +27,7 @@ class WebAnouInfo(models.Model):
             )
 
             response = self.env['ala.firebase.notification'].send_android_notification(
-                            title="📢 ST.ANNE'S School Announcement",
+                            title="📢 St.Eugene School Announcement",
                             body=message_body
                                 )
             print('222222222222------------------',response)
