@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="app_release_temp" name="St.Eugene CBSE School App Download (Animated)">
+    <template id="app_release_temp" name="St. Eugene CBSE School App Download (Animated)">
         <t t-call="website.layout">
             <style>
                 body {
@@ -153,14 +153,15 @@
             </style>
 
             <div class="app-section">
-                <h2>📱 Download St.Eugene School App</h2>
+                <h2>📱 Download St. Eugene CBSE School App</h2>
                 <p>
                     Experience our smart and seamless <b>School Management App</b>.
                     Stay connected with attendance, homework, notices, and updates — anytime, anywhere!
                 </p>
 
+                <!-- SEC-TODO: replace href="#" with the St. Eugene Play Store URL once the app is published -->
                 <div class="store-badge">
-                    <a href="https://play.google.com/store/apps/details?id=annes.management&amp;hl=en_IN" target="_blank">
+                    <a href="#" target="_blank">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
                              alt="Get it on Google Play"/>
                     </a>
@@ -171,7 +172,7 @@
 <!--                    <p>Scan the QR code or click below to download the APK directly:</p>-->
 <!--                    <img src="/ala_website/static/apk/ala_apk.png" alt="QR Code"/>-->
 <!--                    <br/>-->
-<!--                    <a href="/download/mis-app" class="btn btn-primary">-->
+<!--                    <a href="/download/steugene-app" class="btn btn-primary">-->
 <!--                        Download APK-->
 <!--                    </a>-->
 
@@ -186,7 +187,7 @@
                 </div>
 
                 <footer>
-                    <p>© 2025 St.Eugene School • Powered by <b>Alanniainfotechz</b></p>
+                    <p>© 2025 St. Eugene CBSE School • Powered by <b>Alanniainfotechz</b></p>
                 </footer>
             </div>
         </t>

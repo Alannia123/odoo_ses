@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-<!--    About MIS-->
+<!--    About St. Eugene-->
     <template id="ala_propectus_page" name="Prospectus">
         <t t-call="website.layout">
             <div class="container-fluid mt-2" >
                 <section class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"  data-vcss="001" data-snippet="s_title" data-scroll-background-ratio="1">
                     <span class="s_parallax_bg oe_img_bg" style="background-position: 50% 0;">
-                        <img src="https://st.annes.school/media/images/page_images/about/institution/4.webp"/>
+                        <img src="/ala_website/static/src/img/school_web.jpg"/>
                     </span>
                     <div class="o_we_bg_filter bg-black-50"/>
                     <div class="container">
@@ -20,20 +20,20 @@
                         <div class="s_tabs_main">
                             <div class="s_tabs_nav mb-3">
                                 <ul class="nav nav-pills" role="tablist">
-            <!--                        Menu About St.Anne's-->
+            <!--                        Menu About St. Eugene-->
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link o_default_snippet_text active" id="nav_tabs_link_about_mis" data-bs-toggle="tab" href="#nav_tabs_content_about_mis"
-                                            role="tab" aria-controls="nav_tabs_content_about_mis" aria-selected="true">St.Eugene School</a>
+                                        <a class="nav-link o_default_snippet_text active" id="nav_tabs_link_about_school" data-bs-toggle="tab" href="#nav_tabs_content_about_school"
+                                            role="tab" aria-controls="nav_tabs_content_about_school" aria-selected="true">St. Eugene CBSE School</a>
                                     </li>
             <!--                        Menu Institution-->
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link o_default_snippet_text " id="nav_tabs_link_oblates" data-bs-toggle="tab" href="#nav_tabs_content_oblates"
-                                            role="tab" aria-controls="nav_tabs_content_oblates" aria-selected="true">INSTITUTION</a>
+                                        <a class="nav-link o_default_snippet_text " id="nav_tabs_link_institution" data-bs-toggle="tab" href="#nav_tabs_content_institution"
+                                            role="tab" aria-controls="nav_tabs_content_institution" aria-selected="true">THE INSTITUTION</a>
                                     </li>
             <!--                        Menu Management-->
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link o_default_snippet_text" id="nav_tabs_link_omi_education" data-bs-toggle="tab" href="#nav_tabs_content_omi_education"
-                                           role="tab" aria-controls="nav_tabs_content_omi_education" aria-selected="true">MANAGEMENT</a>
+                                        <a class="nav-link o_default_snippet_text" id="nav_tabs_link_management" data-bs-toggle="tab" href="#nav_tabs_content_management"
+                                           role="tab" aria-controls="nav_tabs_content_management" aria-selected="true">MANAGEMENT</a>
                                     </li>
             <!--                        Menu Aim and Objectives-->
                                     <li class="nav-item" role="presentation">
@@ -43,14 +43,14 @@
             <!--                        Menu Our Foundress-->
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link o_default_snippet_text" id="nav_tabs_link_our_foundress" data-bs-toggle="tab" href="#nav_tabs_content_our_foundress"
-                                            role="tab" aria-controls="nav_tabs_link_governing_menbers" aria-selected="false">OUR FOUNDRESS</a>
+                                            role="tab" aria-controls="nav_tabs_link_governing_menbers" aria-selected="false">ADSt. EugeneSIONS 2027-28</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="s_tabs_content tab-content">
-<!--                    Content About St.Anne's-->
+<!--                    Content About St. Eugene-->
 
-                                <div class="tab-pane fade active show" id="nav_tabs_content_about_mis" role="tabpanel" aria-labelledby="nav_tabs_content_about_mis">
+                                <div class="tab-pane fade active show" id="nav_tabs_content_about_school" role="tabpanel" aria-labelledby="nav_tabs_content_about_school">
                                 <section class="s_media_list pt15 pb15 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List"
                                              data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/09_001&quot;,&quot;flip&quot;:[]}" style="background-image: none;">
                                         <div class="container">
@@ -66,22 +66,22 @@
                                                         <div class="s_media_list_body col-lg-6">
                                                             <h3 id="ala_about_us" class="o_default_snippet_text">
                                                                 <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
-                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">PATRONESS OF OUR CONGREGATION.....</span></h3>
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">WELCOME TO ST. EUGENE.....</span></h3>
                                                             <p>
-                                                                St. Anne is the Patroness of our Congregation. The name 'Anne' means'GRACE'. Tradition refers to St. Anne as being the Mother of Virgin Mary, Mother of Jesus.
+                                                                St. Eugene CBSE School is a new English-medium, co-educational school preparing to open its doors for the academic year 2027-28. We are being built around one simple conviction: a good school shapes character just as carefully as it shapes marks.
                                                                 <br></br>
                                                                 <br></br>
-                                                                Anne was born in Bethlehem and was married to Joachim from Nazareth in Galilee. Even after twenty years of marriage the couple had no children. So Joachim went into a desert to plead with God to bless them with a child. He spent a long time in fasting and prayer in the desert. Finally, God heard the prayers of Joachim and Anne and blessed them with a girl child.
+                                                                The campus is being planned from the ground up for the CBSE curriculum - naturally lit classrooms, dedicated science and computer laboratories, a library, and generous open space for sport, music and the arts. Every decision is made with one question in mind: what will help a child learn well and grow up kind?
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div>
                                                     <p>
-                                                        After the child was born, Joachim and Anne named her 'Mary' and dedicated her to God. The child Mary spent much of her childhood at the temple of Jerusalem. When Mary was fourteen years old, she was betrothed to Joseph of Nazareth. And so Mary's story continues with the birth of her son Jesus and His life on earth.
+                                                        Our founding batch will be admitted to LKG, UKG and Classes I to V. From there the school grows by one class each year until it reaches Class XII, so the first children who join us can complete their entire schooling here.
                                                         <br></br>
                                                         <br></br>
-                                                        The life of St. Anne and her connection as Holy Mother of Mary and Grandmother of Jesus has been very popular among all the Christians in the world. The Feast of St. Anne and St. Joachim is celebrated every year on the 26th of July. St. Anne is honored as the Patron Saint for Education. There are numerous educational institutions in her name run by various Societies and organizations which includes our own St. Anne's Congregation.
+                                                        Joining a founding batch is a rare thing. Class sizes stay small, teachers know every child by name, and the students themselves help set the traditions this school will carry for decades. Admission is open to all children irrespective of caste, creed or community.
                                                     </p>
                                                 </div>
 <!--                                            </div>-->
@@ -90,7 +90,7 @@
                                 </section>
                                 </div>
 <!--                        Content Institution-->
-                                <div class="tab-pane fade" id="nav_tabs_content_oblates" role="tabpanel" aria-labelledby="nav_tabs_link_oblates">
+                                <div class="tab-pane fade" id="nav_tabs_content_institution" role="tabpanel" aria-labelledby="nav_tabs_link_institution">
                                 <section class="s_media_list pt15 pb15 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List"
                                              data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/09_001&quot;,&quot;flip&quot;:[]}" style="background-image: none;">
                                         <div class="container">
@@ -101,12 +101,12 @@
                                                         <div class="s_media_list_body col-lg-6">
                                                             <h3 id="ala_about_us" class="o_default_snippet_text">
                                                                 <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
-                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">OBLATES.....</span></h3>
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">THE INSTITUTION.....</span></h3>
                                                             <p>
-                                                                St. Anne's School, Chhoto Jagulia, North 24 Parganas, West Bengal is established In 2018, owned by the Society of S of Sisters of St. Anne, Chennal, a body registered under the Society Registration Act1860. It is a Catholic Educational Institution conducted by the Sisters of St. Anne, Chhoto Jagulia a branch of the Society of Sisters of St. Anne.
+                                                                St. Eugene CBSE School is scheduled to begin its first academic session in June 2027. It is an English-medium, co-educational institution established and administered by [Name of Trust / Society - SEC-TODO], and it follows the curriculum prescribed by the Central Board of Secondary Education, New Delhi.
                                                                 <br></br>
                                                                 <br></br>
-                                                                The Society of Sisters of St. Anne is working practically in all over India through education Institutions, Health Centers, orphanages and other charitable and promotional works. The School admits all children irrespective of caste and creed.
+                                                                The school admits children of all castes, creeds and communities. Preparation for the first session is under way across three fronts at once: completing the campus and its laboratories, recruiting and training the founding teaching team, and finalising the academic plan for the primary years.
                                                             </p>
                                                         </div>
                                                         <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
@@ -119,7 +119,7 @@
                                                 </div>
                                                 <div>
                                                     <p>
-                                                        The course of instruction through the medium of English prepares the girls/boys for the ICSE Examinations of the Council for the Indian School Certificate Examinations.
+                                                        Instruction is in English throughout. The course of study prepares students for the examinations of the Central Board of Secondary Education, New Delhi, with Tamil and Hindi offered as second and third languages.
                                                     </p>
                                                 </div>
 <!--                                            </div>-->
@@ -128,7 +128,7 @@
                                 </section>
                                 </div>
 <!--                            Content Management-->
-                                <div class="tab-pane fade" id="nav_tabs_content_omi_education" role="tabpanel" aria-labelledby="nav_tabs_link_omi_education">
+                                <div class="tab-pane fade" id="nav_tabs_content_management" role="tabpanel" aria-labelledby="nav_tabs_link_management">
                                 <section class="s_media_list pt15 pb15 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List"
                                              data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/09_001&quot;,&quot;flip&quot;:[]}" style="background-image: none;">
                                         <div class="container">
@@ -144,20 +144,22 @@
                                                         <div class="s_media_list_body col-lg-6">
                                                             <h3 id="ala_about_us" class="o_default_snippet_text">
                                                                 <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
-                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">OMI AND EDUCATION.....</span></h3>
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">OUR MANAGEMENT.....</span></h3>
                                                             <p>
-                                                                The management The congregation of Society of sisters of St.Anne is the management of the school. The management consists of President, vice President, Secretary and the Principal .It is deciding body of the school. It decides all that is concerning St.Anne’s school, Chotojagulia. Whatever the management decides is the final decision regarding anything concerning the school.
+                                                                The school is governed by a Management Committee constituted in accordance with CBSE norms. It comprises the President, the Vice-President, the Secretary, the Correspondent and the Principal, together with parent and teacher representatives who join once the first session begins.
+                                                                <br></br>
+                                                                <br></br>
+                                                                The Committee is the deciding body of the school. It sets academic policy, approves the budget and fee structure, oversees staff appointments, and takes final responsibility for all matters concerning St. Eugene CBSE School.
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div>
                                                     <p>
-                                                        We are fortunate and blessed with a team of committed teachers and non-teaching staff.
-                                                        Our parents are a strong support to participate harmoniously to create an educational
-                                                        experience to anyone in the campus by their dynamic activities with the school staff.
-                                                        Anyone can witness a variety of activities that keep the class rooms dynamic and cheerful
-                                                        learning hubs of St.Anne's School campus.
+                                                        Our founding teaching team is being recruited now, and we are deliberately taking our time over it. We are looking for teachers who are strong in their subject, patient with children, and genuinely interested in building something from the beginning. Every appointee goes through a structured CBSE orientation programme before the session opens.
+                                                        <br></br>
+                                                        <br></br>
+                                                        Parents are partners in this, not spectators. From the first term we will run regular parent-teacher meetings, an open-door policy for concerns, and a parent representative seat on the Management Committee.
                                                     </p>
                                                 </div>
 <!--                                            </div>-->
@@ -177,12 +179,12 @@
                                                         <div class="s_media_list_body col-lg-6">
                                                             <h3 id="ala_about_us" class="o_default_snippet_text">
                                                                 <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
-                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">VISION AND MISSION.....</span></h3>
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">AIM AND OBJECTIVES.....</span></h3>
                                                             <p>
-                                                                1. The aim of the School is to impart to its pupils sound education and discipline based on moral principles and instill in them the spirit of service and joy and make them useful members of the Society.
+                                                                <b>Our Vision.</b> To be a school where children are taught to think clearly, act honestly and care about people beyond themselves - and where academic excellence is the result of that upbringing rather than a substitute for it.
                                                                 <br></br>
                                                                 <br></br>
-                                                                2. It works with the Charism of the Society of Sisters of St. Anne, "Fullness in God and Service in Simplicity" by inculcating in them the fear of God, Self-confidence, honesty, sincerity, equality and fraternity. We shall see that every pupil in our School is formed to be a good leader, responsible citizen.
+                                                                <b>Our Mission.</b> To give every student a sound education and a settled sense of discipline built on moral principles; to draw out each child's individual strengths instead of ranking them against one another; and to send out young people who are confident, sincere and useful members of society.
 
 
                                                             </p>
@@ -197,7 +199,7 @@
                                                 </div>
                                                 <div>
                                                     <p>
-                                                        3. The constant effort of the well trained staff is to develop the individual personality of each pupil and bring out those qualities which are best and noblest in them. Special attention is given to ensure a value-based education. In order to enable the child choose the higher values of life, such as respect, love, peace, justice, goodness and brotherhood.
+                                                        <b>Our Objectives.</b> To build a strong foundation in language, mathematics, science and social understanding through the CBSE curriculum. To make enquiry, reading and discussion normal classroom habits rather than exam-time exercises. To give sport, music, art and public speaking real time in the timetable, not leftover time. To keep classes small enough that no child goes unnoticed. And to hold up the values of respect, honesty, peace, justice and fellowship as things we practise, not merely display.
                                                     </p>
                                                 </div>
 <!--                                            </div>-->
@@ -217,9 +219,18 @@
                                                         <div class="s_media_list_body col-lg-6">
                                                             <h3 id="ala_about_us" class="o_default_snippet_text">
                                                                 <span class="o_animated_text o_animate o_anim_zoom_in o_visible o_animated"
-                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">OUR FOUNDRESS.....</span></h3>
+                                                                      style="animation-name: o_anim_zoom_in; animation-play-state: running; visibility: visible;">ADSt. EugeneSIONS 2027-28.....</span></h3>
                                                             <p>
-                                                                The Society of Sisters of St. Anne is a Pontifical Congregation. It was chiefly founded for the empowerment of the powerless, the poor and the marginalized. This vision of the Congregation springs from the life and work of the Foundress Thatipathri Gnanamma.
+                                                                Applications are now open for our founding batch, joining in <b>June 2027</b>.
+                                                                <br></br>
+                                                                <br></br>
+                                                                <b>Classes offered in the first session:</b> LKG, UKG and Classes I to V.
+                                                                <br></br>
+                                                                <b>Age as on 31 March 2027:</b> LKG - 3+ years; UKG - 4+ years; Class I - 5+ years.
+                                                                <br></br>
+                                                                <b>Medium of instruction:</b> English. <b>Board:</b> CBSE, New Delhi.
+                                                                <br></br>
+                                                                <b>Seats:</b> limited, to keep the founding classes small.
                                                             </p>
                                                         </div>
                                                         <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
@@ -232,7 +243,10 @@
                                                 </div>
                                                 <div>
                                                     <p>
-                                                        The sensitivity to the cry of the poor and creative response to the signs of the times defines the core identity of the Congregation. This drives the Sisters to engage themselves in liberative, empowering and life-giving mission for the marginalized involving in many ministries - social, spiritual, cultural, pastoral, medical, educational that manifest in concrete actions the word of God.
+                                                        <b>Indicative admission timeline.</b> Applications open - September 2026. Campus open days for parents - November 2026. Parent interaction and registration - January 2027. First list of selected students - February 2027. Fee payment and confirmation - March 2027. Orientation for new parents - May 2027. First academic session begins - June 2027.
+                                                        <br></br>
+                                                        <br></br>
+                                                        There is no written test for entry to the primary classes; admission is by a short, informal interaction with the child and parents. To apply, use the <a href="/applyonline">online application form</a>, or contact the school office at [Phone - SEC-TODO] or [Email - SEC-TODO]. Dates are indicative and will be confirmed on this page before applications open.
                                                     </p>
                                                 </div>
 <!--                                            </div>-->
@@ -250,8 +264,8 @@
         </t>
 </template>
 
-<!--    OBLATES-->
-    <template id="ala_oblates" name="Oblates MIS">
+<!--    THE INSTITUTION-->
+    <template id="institution_page" name="The Institution">
         <t t-call="website.layout">
             <section
                     class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
@@ -259,22 +273,18 @@
                     data-scroll-background-ratio="1">
                 <span class="s_parallax_bg oe_img_bg"
                       style="background-position: 50% 0;">
-                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                    <img src="/ala_website/static/src/img/school_web.jpg"/>
                 </span>
                 <div class="o_we_bg_filter bg-black-50"/>
                 <div class="container">
-                    <h1>OBLATES</h1>
+                    <h1>The Institution</h1>
                 </div>
             </section>
-            <div class="text-center align-items-center award-box awards-area-mobile bg-white d-inline-flex f-w-500 flex-column font-14 gap-2 justify-content-center p-3 position-absolute rounded-3 nine">
-	<img alt="Top Salesforce Partner" height="100" loading="lazy" src="https://relaxripple.in/landing/assets/newExtra/invetory.jpg" style="color:transparent" width="100"></img>
-	<span class="award-title">Top Salesforce Partner</span>
-</div>
         </t>
     </template>
 
-<!--    OBLATES-->
-    <template id="omi_and_education" name="OMI and Education">
+<!--    THE INSTITUTION-->
+    <template id="management_page" name="Our Management">
         <t t-call="website.layout">
             <section
                     class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
@@ -282,11 +292,11 @@
                     data-scroll-background-ratio="1">
                 <span class="s_parallax_bg oe_img_bg"
                       style="background-position: 50% 0;">
-                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                    <img src="/ala_website/static/src/img/school_web.jpg"/>
                 </span>
                 <div class="o_we_bg_filter bg-black-50"/>
                 <div class="container">
-                    <h1>OMI and Education</h1>
+                    <h1>Our Management</h1>
                 </div>
             </section>
         </t>
@@ -301,7 +311,7 @@
                     data-scroll-background-ratio="1">
                 <span class="s_parallax_bg oe_img_bg"
                       style="background-position: 50% 0;">
-                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                    <img src="/ala_website/static/src/img/school_web.jpg"/>
                 </span>
                 <div class="o_we_bg_filter bg-black-50"/>
                 <div class="container">
@@ -320,7 +330,7 @@
                     data-scroll-background-ratio="1">
                 <span class="s_parallax_bg oe_img_bg"
                       style="background-position: 50% 0;">
-                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                    <img src="/ala_website/static/src/img/school_web.jpg"/>
                 </span>
                 <div class="o_we_bg_filter bg-black-50"/>
                 <div class="container">
@@ -339,7 +349,7 @@
                     data-scroll-background-ratio="1">
                 <span class="s_parallax_bg oe_img_bg"
                       style="background-position: 50% 0;">
-                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                    <img src="/ala_website/static/src/img/school_web.jpg"/>
                 </span>
                 <div class="o_we_bg_filter bg-black-50"/>
                 <div class="container">
@@ -358,7 +368,7 @@
                     data-scroll-background-ratio="1">
                 <span class="s_parallax_bg oe_img_bg"
                       style="background-position: 50% 0;">
-                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                    <img src="/ala_website/static/src/img/school_web.jpg"/>
                 </span>
                 <div class="o_we_bg_filter bg-black-50"/>
                 <div class="container">
@@ -377,7 +387,7 @@
                     data-scroll-background-ratio="1">
                 <span class="s_parallax_bg oe_img_bg"
                       style="background-position: 50% 0;">
-                    <img src="https://media.istockphoto.com/id/1410336912/photo/happy-teacher-and-schoolgirl-giving-high-five-during-class-at-school.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=6kzktqHzjmCr5NT54ARvu5zV5HjOyzeRzvQfmhsQZjY="/>
+                    <img src="/ala_website/static/src/img/school_web.jpg"/>
                 </span>
                 <div class="o_we_bg_filter bg-black-50"/>
                 <div class="container">

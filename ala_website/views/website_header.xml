@@ -42,9 +42,11 @@
                                  style="width:90px; height:110px; object-fit:contain;"/>
                         </a>
                         <div class="row">
-                        <h5 class="stylish-heading text-center">St.Eugene CBSE School</h5>
-                        <h5 class="text-center" style="color: #338080;">Marianathapuran, Dindigul, Tamil Nadu - 624003</h5>
-                        <h4 class="text-center" style="color: #803300;">(Affiliated to CBSE)</h4>
+                        <h5 class="stylish-heading text-center">St. Eugene CBSE School</h5>
+                        <!-- SEC-TODO: replace with the school's actual address before launch -->
+                        <h5 class="text-center" style="color: #338080;">[School Address], Tamil Nadu - [PIN]</h5>
+                        <!-- SEC-TODO: update once CBSE affiliation is granted, then add the affiliation number -->
+                        <h4 class="text-center" style="color: #803300;">CBSE Curriculum &#183; Opening June 2027</h4>
                             </div>
                         <ul class="navbar-nav align-items-center gap-1">
                             <!-- Search bar -->

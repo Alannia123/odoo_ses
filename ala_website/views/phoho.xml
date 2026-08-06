@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-<!--    About MIS-->
+<!--    About St. Eugene-->
   <template id="program_events_gallery" name="Program and Events">
     <t t-call="website.layout">
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-<!--    About MIS-->
+<!--    About St. Eugene-->
      <template id="template_magazine_list" name="E-Magazine Gallery (Parallax Animated)">
     <t t-call="website.layout">
       <style>

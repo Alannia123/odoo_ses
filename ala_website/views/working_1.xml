@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <template id="ala_home_page" name="MIS Website Page (Soft Glow)">
+  <template id="ala_home_page" name="St. Eugene Website Page (Soft Glow)">
     <t t-call="website.layout">
       <div id="wrap" class="oe_structure o_cc3 o_colored_level">
 
         <!-- ================= Banner ================= -->
         <t t-if="banner">
-          <div class="mis-banner-strip">
+          <div class="seu-banner-strip">
             <div class="hov_hi" style="background:linear-gradient(180deg,#B33A3A 0%,#004AAD 100%);color:#fff;font-weight:700;">
               <marquee onmouseover="this.stop();" onmouseout="this.start();" style="padding:6px 0;font-size:17px;">
                 <t t-out="banner.info"/>
@@ -22,12 +22,12 @@
                style="display:none;"></div>
         </t>
 
-          <section class="mis-hero-section">
+          <section class="seu-hero-section">
   <div class="hero-content text-center">
 
     <h1 class="hero-title">
       Change the world with <span>Education</span>
-      and <span>Carve</span> your Child's Future with <span>MIS</span>.
+      and <span>Carve</span> your Child's Future with <span>St. Eugene</span>.
     </h1>
 
     <p class="hero-subtitle">
@@ -38,7 +38,7 @@
 </section>
 
 <style>
-.mis-hero-section {
+.seu-hero-section {
   width: 100%;
   padding: 70px 20px 40px 20px;  /* reduced spacing */
   background: linear-gradient(135deg, #003859 0%, #006b9b 50%, #00a4d6 100%);
@@ -77,7 +77,7 @@
 </style>
 
 
-          <section class="mis-cube-wrapper">
+          <section class="seu-cube-wrapper">
   <h2 class="cube-heading">
     <i class="fa-solid fa-university"></i> CAMPUS HIGHLIGHTS
   </h2>
@@ -98,7 +98,7 @@
 </section>
 
 <style>
-.mis-cube-wrapper {
+.seu-cube-wrapper {
   padding: 40px 0 70px 0;
   width: 100%;
   background: #d6e3eb;
@@ -162,7 +162,7 @@
             <!-- 🌟 Hero Heading for School -->
             <div class="cube-hero-text mb-4">
               <h4 class="hero-education-title">
-                Change the world with <b>Education</b> and <b>Carve</b> your Child's Future with <b>MIS</b>.
+                Change the world with <b>Education</b> and <b>Carve</b> your Child's Future with <b>St. Eugene</b>.
               </h4>
               <p class="hero-education-subtitle">
                 To Sail in the Ocean of Wisdom...

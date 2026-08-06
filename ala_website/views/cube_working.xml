@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <template id="ala_home_page" name="MIS Website Page (Soft Glow)">
+  <template id="ala_home_page" name="St. Eugene Website Page (Soft Glow)">
     <t t-call="website.layout">
       <div id="wrap" class="oe_structure o_cc3 o_colored_level">
 
         <!-- ================= Banner ================= -->
         <t t-if="banner">
-          <div class="mis-banner-strip">
+          <div class="seu-banner-strip">
             <div class="hov_hi" style="background:linear-gradient(180deg,#B33A3A 0%,#004AAD 100%);color:#fff;font-weight:700;">
               <marquee onmouseover="this.stop();" onmouseout="this.start();" style="padding:6px 0;font-size:17px;">
                 <t t-out="banner.info"/>
@@ -29,7 +29,7 @@
             <!-- 🌟 Hero Heading for School -->
             <div class="cube-hero-text mb-4">
               <h4 class="hero-education-title">
-                Change the world with <b>Education</b> and <b>Carve</b> your Child's Future with <b>MIS</b>.
+                Change the world with <b>Education</b> and <b>Carve</b> your Child's Future with <b>St. Eugene</b>.
               </h4>
               <p class="hero-education-subtitle">
                 To Sail in the Ocean of Wisdom...

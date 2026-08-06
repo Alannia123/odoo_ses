@@ -13,15 +13,15 @@ class ala_prospectus(http.Controller):
         """To redirect to contact page."""
         return request.render('ala_website.ala_propectus_page')
 
-    @http.route('/ala_oblates', type='http', auth='public', website=True)
-    def ala_oblates_cont(self):
+    @http.route('/institution', type='http', auth='public', website=True)
+    def institution_cont(self):
         """To redirect to contact page."""
-        return request.render('ala_website.ala_oblates')
+        return request.render('ala_website.institution_page')
 
-    @http.route('/omi_and_education', type='http', auth='public', website=True)
-    def omi_and_education_cont(self):
+    @http.route('/management', type='http', auth='public', website=True)
+    def management_cont(self):
         """To redirect to contact page."""
-        return request.render('ala_website.omi_and_education')
+        return request.render('ala_website.management_page')
 
     @http.route('/mission_and_vission', type='http', auth='public', website=True)
     def vision_mission_cont(self):

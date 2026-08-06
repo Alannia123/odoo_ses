@@ -4,7 +4,7 @@
     'name': ' ALA School Education Management',
     'version': '19.0.1.0.0',
     'category': 'School',
-    'summary': """Manage the MIS School Website education system""",
+    'summary': """Manage the St. Eugene School Website education system""",
     'description': """This modules helps to organize the website data and helps to update the website datas""",
     'author': 'Alannia',
     'company': 'alanniainfotechz',

@@ -4,12 +4,12 @@ import os
 
 class ApkDownloadController(http.Controller):
 
-    @http.route('/download/mis-app', type='http', auth='public', website=True)
+    @http.route('/download/steugene-app', type='http', auth='public', website=True)
     def download_apk(self):
         # Absolute path to APK
         apk_path = os.path.join(
             os.path.dirname(__file__),
-            '..', 'static', 'apk', 'MIS_School_App.apk'
+            '..', 'static', 'apk', 'St. Eugene_School_App.apk'
         )
         print('AAAAAAAAAAAAAAAAAAA=================',apk_path)
 
@@ -17,5 +17,5 @@ class ApkDownloadController(http.Controller):
             apk_path,
             mimetype='application/vnd.android.package-archive',
             as_attachment=True,
-            filename='MIS_School_App.apk'
+            filename='St. Eugene_School_App.apk'
         )

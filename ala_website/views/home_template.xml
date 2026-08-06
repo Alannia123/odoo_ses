@@ -6,7 +6,7 @@
 
         <!-- ▬▬▬▬▬ TOP BANNER ▬▬▬▬▬ -->
         <t t-if="banner">
-          <div class="mis-banner-strip">
+          <div class="seu-banner-strip">
             <div class="hov_hi"
                  style="background:linear-gradient(180deg,#B33A3A 0%,#004AAD 100%);color:#fff;font-weight:700;">
               <marquee onmouseover="this.stop();" onmouseout="this.start();" style="padding:6px 0;font-size:17px;">
@@ -23,7 +23,7 @@
                style="display:none;"></div>
         </t>
 <!-- ▬▬▬▬▬ NEW ENHANCED HERO ▬▬▬▬▬ -->
-<section class="mis-hero-section">
+<section class="seu-hero-section">
 
     <!-- Animated Background Orbs -->
     <div class="orb orb1"></div>
@@ -36,7 +36,7 @@
     <div class="hero-glass-card fade-in-up">
       <h1 class="hero-title">
         Change the World with <span>Education</span> and
-        <span>Carve</span> Your Child's Future with <span>St.Eugene</span>.
+        <span>Carve</span> Your Child's Future with <span>St. Eugene</span>.
       </h1>
 
       <p class="hero-subtitle">To Sail in the Ocean of Wisdom...</p>
@@ -56,7 +56,7 @@
 
 
         <!-- ▬▬▬▬▬ MAIN FLEX LAYOUT ▬▬▬▬▬ -->
-       <section class="mis-premium-layout smooth-connect-bg">
+       <section class="seu-premium-layout smooth-connect-bg">
 
   <!-- LEFT SCHOOL FEATURES -->
   <div class="left-features">
@@ -133,7 +133,7 @@
 }
 
 <!--/* Make wave and second section visually merge */-->
-<!--.mis-hero-section {-->
+<!--.seu-hero-section {-->
 <!--  padding-bottom: 0 !important;-->
 <!--  margin-bottom: -5px; /* remove gap */-->
 <!--}-->
@@ -166,7 +166,7 @@
 
 
             /* ---------------------- HERO SECTION ---------------------- */
-.mis-hero-section {
+.seu-hero-section {
   width: 100%;
   padding: 15px 20px 0px;
   position: relative;
@@ -175,7 +175,7 @@
   background: linear-gradient(135deg,#015a8f,#007bc7,#00a6ff);
 }
 
-.mis-hero-section .hero-wave {
+.seu-hero-section .hero-wave {
   margin-top: -25px;   /* pull wave up */
 }
 
@@ -305,7 +305,7 @@
 
 
         /* LAYOUT STRUCTURE */
-        .mis-premium-layout {
+        .seu-premium-layout {
           display: flex;
           justify-content: space-between;
           align-items: center !important;
@@ -485,18 +485,18 @@
 
 
 
-<!-- 🌈 MIS Row Cards (Full-width Fancy Section with Animations) -->
-<section class="mis-row-cards-fancy py-5">
+<!-- 🌈 St. Eugene Row Cards (Full-width Fancy Section with Animations) -->
+<section class="seu-row-cards-fancy py-5">
   <div class="container-fluid px-4">
     <div class="row g-4 align-items-stretch">
 
       <!-- 📰 Announcements -->
       <div class="col-lg-3 col-md-12 fade-in-card" style="--delay:0s;">
-        <div class="card mis-frost-card h-100">
+        <div class="card seu-frost-card h-100">
           <div class="card-body">
-            <h5 class="mis-section-title">Announcements</h5>
-            <div class="mis-divider"></div>
-            <div class="mis-scroll-pane">
+            <h5 class="seu-section-title">Announcements</h5>
+            <div class="seu-divider"></div>
+            <div class="seu-scroll-pane">
               <marquee width="100%" height="100%" behavior="scroll" direction="up" scrollamount="3"
                        onmouseover="this.stop();" onmouseout="this.start();">
                 <t t-raw="notices"/>
@@ -508,19 +508,19 @@
 
       <!-- 🎬 School Media -->
       <div class="col-lg-6 col-md-12 fade-in-card" style="--delay:0.2s;">
-        <div class="card mis-media-card h-100 text-center position-relative">
+        <div class="card seu-media-card h-100 text-center position-relative">
             <t t-set="media_vid_url" t-value="media_url or ''"/>
           <div class="video-wrapper">
             <iframe class="school-video"
                 t-att-src="'https://www.youtube.com/embed/' + media_vid_url + '?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=' + media_vid_url + '&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;showinfo=0'"
-                    title="Mary Immaculate School Media"
+                    title="St. Eugene CBSE School Media"
                     allow="autoplay; encrypted-media"
                     allowfullscreen="allowfullscreen">
             </iframe>
 
             <div class="video-overlay"></div>
             <div class="video-caption glossy">
-              <h2 class="video-title">🎓 MIS School Media</h2>
+              <h2 class="video-title">🎓 St. Eugene School Media</h2>
               <p class="video-subtitle">Moments that Inspire • Learn • Shine</p>
             </div>
           </div>
@@ -529,16 +529,16 @@
 
       <!-- 🎂 Birthdays -->
       <div class="col-lg-3 col-md-12 fade-in-card" style="--delay:0.4s;">
-        <div class="card mis-birthday-glass h-100 text-center">
+        <div class="card seu-birthday-glass h-100 text-center">
           <div class="card-body position-relative">
-            <h5 class="mis-section-title">Birthdays</h5>
-            <div class="mis-divider"></div>
-            <p class="mis-muted small mb-3">Today: <t t-out="today_date"/></p>
+            <h5 class="seu-section-title">Birthdays</h5>
+            <div class="seu-divider"></div>
+            <p class="seu-muted small mb-3">Today: <t t-out="today_date"/></p>
             <t t-if="not today_births">
               <b class="text-light">No birthdays today 🎉</b>
             </t>
             <t t-else="">
-              <div class="mis-scroll-pane">
+              <div class="seu-scroll-pane">
                 <marquee width="100%" height="100%" behavior="scroll" direction="up" scrollamount="3"
                          onmouseover="this.stop();" onmouseout="this.start();">
                   <t t-raw="birth_raw_html"/>
@@ -560,7 +560,7 @@
 </section>
 
 <style>/* 🌟 Section Background + Glow */
-.mis-row-cards-fancy {
+.seu-row-cards-fancy {
   background: radial-gradient(circle at top left, #e9f5ff 0%, #fff1fa 100%);
   border-radius: 30px;
   padding: 40px 0;
@@ -572,7 +572,7 @@
   align-items: stretch;
 }
 
-.mis-row-cards-fancy::before {
+.seu-row-cards-fancy::before {
   content: "";
   position: absolute;
   top: -40%;
@@ -589,7 +589,7 @@
 }
 
 /* 💎 Base Cards */
-.mis-frost-card, .mis-media-card, .mis-birthday-glass {
+.seu-frost-card, .seu-media-card, .seu-birthday-glass {
   border: none;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.35);
@@ -604,22 +604,22 @@
   min-height: 480px;
 }
 
-.mis-frost-card:hover, .mis-media-card:hover, .mis-birthday-glass:hover {
+.seu-frost-card:hover, .seu-media-card:hover, .seu-birthday-glass:hover {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 0 45px rgba(0, 160, 255, 0.35);
 }
 
 /* 🧱 Card Body Flex (Important for no extra space) */
-.mis-frost-card .card-body,
-.mis-media-card .card-body,
-.mis-birthday-glass .card-body {
+.seu-frost-card .card-body,
+.seu-media-card .card-body,
+.seu-birthday-glass .card-body {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 /* Titles + Divider */
-.mis-section-title {
+.seu-section-title {
   font-weight: 800;
   font-size: 26px;
   background: linear-gradient(90deg, #0066ff, #ff20a8);
@@ -628,7 +628,7 @@
   letter-spacing: 1px;
 }
 
-.mis-divider {
+.seu-divider {
   width: 100px;
   height: 4px;
   margin: 0 auto 20px;
@@ -696,7 +696,7 @@
 }
 
 /* 🎈 Birthday Section */
-.mis-birthday-glass {
+.seu-birthday-glass {
   background-image: url('/ala_website/static/src/img/birth.jpeg');
   background-size: cover;
   background-position: center;
@@ -707,7 +707,7 @@
 }
 
 /* Floating balloons */
-.mis-birthday-glass::after {
+.seu-birthday-glass::after {
   content: "🎈";
   position: absolute;
   font-size: 50px;
@@ -756,11 +756,11 @@
 
 /* Responsive */
 @media (max-width: 991px) {
-  .mis-row-cards-fancy {
+  .seu-row-cards-fancy {
     padding: 20px 0;
   }
 
-  .mis-frost-card, .mis-media-card, .mis-birthday-glass {
+  .seu-frost-card, .seu-media-card, .seu-birthday-glass {
     min-height: auto;
   }
 
@@ -777,7 +777,7 @@
 
 
         <!-- ========== About School ========== -->
-        <section class="mis-about py-5">
+        <section class="seu-about py-5">
           <div class="container">
             <div class="text-center mb-4">
               <h3 class="animated-heading">Our School</h3>
@@ -787,12 +787,7 @@
               <div class="col-lg-6">
                 <div class="glow-background p-4">
                   <p class="text-style mb-0">
-                    Mary Immaculate E.M. School, Basirhat was started on 11 March 2014 at OMI Maria Bhavan, with KG 1 as a co-education
-                    school to be upgraded every year. The school was accorded with permanent NOC eum Certificate of Recognition
-                    (Memo No. 20-SC/AIS/NOC AIS/RTE/COMMTT/55/2019, dated 24.01.2023) by the Directorate of School Education,
-                    Government of West Bengal. The school follows the proposed syllabus of ICSE Board, New Delhi. "Mary Immaculate
-                    English Medium School", Basirhat, is a missionary school, which has its mission and vision according to the Gospel
-                    values. We take care of our children's all-round education.
+                    St. Eugene CBSE School opens for its first academic session in June 2027. It is an English-medium, co-educational school following the curriculum of the Central Board of Secondary Education, New Delhi. The founding session covers LKG, UKG and Classes I to V, and the school will be upgraded by one class every year thereafter until Class XII.
                   </p>
                 </div>
               </div>
@@ -800,10 +795,10 @@
                 <section class="s_school_video_section p-3 h-100 text-center position-relative">
                     <t t-set="school_vid_url" t-value="school_video_url or ''"/>
                     <div class="video-wrapper">
-                      <!-- 🎥 MIS Basirhat School YouTube Video -->
+                      <!-- 🎥 St. Eugene CBSE School YouTube Video -->
                 <iframe class="school-video-yu"
     t-att-src="'https://www.youtube.com/embed/' + school_vid_url + '?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=' + school_vid_url + '&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;showinfo=0'"
-                        title="Mary Immaculate School - Official Video"
+                        title="St. Eugene CBSE School - Official Video"
                         frameborder="0"
                         allow="autoplay; encrypted-media"
                         allowfullscreen="allowfullscreen">
@@ -814,7 +809,7 @@
 
                       <!-- Optional caption -->
                       <div class="video-caption-sc">
-                        <h3>🎓 St.Eugene School</h3>
+                        <h3>🎓 St. Eugene CBSE School</h3>
                         <p>Where Knowledge Meets Values</p>
                       </div>
                     </div>
@@ -826,7 +821,7 @@
 
           <style>
             /* 🌟 ABOUT SECTION CONTAINER */
-.mis-about {
+.seu-about {
   background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
   padding: 60px 0;
   position: relative;
@@ -971,7 +966,7 @@
 
 
 /* ✨ Sparkle Background */
-.mis-about::before {
+.seu-about::before {
   content: "";
   position: absolute;
   width: 120%;
@@ -1066,70 +1061,70 @@ document.addEventListener("DOMContentLoaded", () => {
 
               <!-- President -->
               <div class="col-lg-6">
-                <div class="mis-profile-card">
+                <div class="seu-profile-card">
                   <t t-set="president" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'president')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(president.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="president.name"/></b></h4>
-                    <p>President of OMI group of schools,<br/>St. Joseph Bhavan, Rudra Road,<br/>St. Thomas Mount, Chennai.</p>
+                    <p>President,<br/>St. Eugene CBSE School</p>
                   </div>
                 </div>
               </div>
 
               <!-- Secretary -->
               <div class="col-lg-6">
-                <div class="mis-profile-card">
+                <div class="seu-profile-card">
                   <t t-set="secretary" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'secretary')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(secretary.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="secretary.name"/></b></h4>
-                    <p>Secretary, OMI group of Schools,<br/>St.Eugene English Medium School</p>
+                    <p>Secretary,<br/>St. Eugene CBSE School</p>
                   </div>
                 </div>
               </div>
 
               <!-- Principal -->
               <div class="col-lg-6">
-                <div class="mis-profile-card">
+                <div class="seu-profile-card">
                   <t t-set="principal" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'principal')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(principal.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="principal.name"/></b></h4>
-                    <p>Principal,<br/>Mary Immaculate School,<br/>Patilachandra, Basirhat.</p>
+                    <p>Principal,<br/>St. Eugene CBSE School</p>
                   </div>
                 </div>
               </div>
 
               <!-- Manager -->
               <div class="col-lg-6">
-                <div class="mis-profile-card">
+                <div class="seu-profile-card">
                   <t t-set="manager" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'manager')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(manager.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="manager.name"/></b></h4>
-                    <p>Manager,<br/>Mary Immaculate School,<br/>Patilachandra, Basirhat.</p>
+                    <p>Manager,<br/>St. Eugene CBSE School</p>
                   </div>
                 </div>
               </div>
 
               <!-- Administrator -->
               <div class="col-lg-12">
-                <div class="mis-profile-card wide">
+                <div class="seu-profile-card wide">
                   <t t-set="administrator" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'administrator')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(administrator.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="administrator.name"/></b></h4>
-                    <p>Administrator,<br/>Mary Immaculate School,<br/>Patilachandra, Basirhat.</p>
+                    <p>Administrator,<br/>St. Eugene CBSE School</p>
                   </div>
                 </div>
               </div>
@@ -1145,9 +1140,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="s_timeline_row d-block d-md-flex flex-row">
               <div class="s_timeline_date"><b>2025</b></div>
               <div class="s_timeline_content d-flex">
-                <div class="s_timeline_card s_card card bg-white w-100 mis-soft-card">
+                <div class="s_timeline_card s_card card bg-white w-100 seu-soft-card">
                   <div class="card-body">
-                    <h5 class="card-title">ICSE 1st Batch (Class: X)</h5>
+                    <h5 class="card-title">CBSE 1st Batch (Class: X)</h5>
                   </div>
                 </div>
                 <i class="fa fa-1x fa-child bg-o-color-2 rounded-circle s_timeline_icon"></i>
@@ -1158,18 +1153,18 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="s_timeline_row d-block d-md-flex flex-row">
               <div class="s_timeline_date"><b>2022</b></div>
               <div class="s_timeline_content d-flex">
-                <div class="s_timeline_card s_card card bg-white w-100 mis-soft-card">
+                <div class="s_timeline_card s_card card bg-white w-100 seu-soft-card">
                   <div class="card-body">
-                    <h5 class="card-title">Best School in Basirhat, North 24 PGS...</h5>
+                    <h5 class="card-title">Admissions open for 2027-28...</h5>
                   </div>
                 </div>
                 <i class="fa fa-1x fa-graduation-cap bg-o-color-2 rounded-circle s_timeline_icon"></i>
               </div>
               <div class="s_timeline_content d-flex">
                 <i class="fa fa-1x fa-asterisk bg-o-color-2 rounded-circle s_timeline_icon"></i>
-                <div class="s_timeline_card s_card card bg-white w-100 mis-soft-card">
+                <div class="s_timeline_card s_card card bg-white w-100 seu-soft-card">
                   <div class="card-body">
-                    <h5 class="card-title">Affiliated to ICSE</h5>
+                    <h5 class="card-title">Affiliated to CBSE</h5>
                   </div>
                 </div>
               </div>
@@ -1178,9 +1173,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="s_timeline_row d-block d-md-flex flex-row-reverse">
               <div class="s_timeline_date"><b>2014</b></div>
               <div class="s_timeline_content d-flex">
-                <div class="s_timeline_card s_card card bg-white w-100 mis-soft-card">
+                <div class="s_timeline_card s_card card bg-white w-100 seu-soft-card">
                   <div class="card-body">
-                    <h5 class="card-title">Mary Immaculate School Established</h5>
+                    <h5 class="card-title">St. Eugene CBSE School Established</h5>
                   </div>
                 </div>
                 <i class="fa fa-1x fa-bolt bg-o-color-2 rounded-circle s_timeline_icon"></i>
@@ -1196,28 +1191,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
           /* Row cards */
-          .mis-row-cards{ background:linear-gradient(180deg,#f7fbff 0%, #eef5ff 100%); }
-          .mis-soft-card{
+          .seu-row-cards{ background:linear-gradient(180deg,#f7fbff 0%, #eef5ff 100%); }
+          .seu-soft-card{
             border:none; border-radius:16px; background:rgba(255,255,255,.6);
             backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
             box-shadow: 0 10px 24px rgba(0,0,0,.06), inset 0 0 18px rgba(255,255,255,.5);
           }
-          .mis-section-title{ color:#003366; font-weight:800; letter-spacing:.4px; margin-bottom:.25rem;}
-          .mis-divider{ width:60px; height:3px; background:linear-gradient(90deg,#7ec6ff,#a6dcff); border-radius:2px; margin: 6px 0 14px;}
-          .mis-scroll-pane{ height:300px; overflow:hidden; border-radius:10px; }
-          .mis-birthday-card{
+          .seu-section-title{ color:#003366; font-weight:800; letter-spacing:.4px; margin-bottom:.25rem;}
+          .seu-divider{ width:60px; height:3px; background:linear-gradient(90deg,#7ec6ff,#a6dcff); border-radius:2px; margin: 6px 0 14px;}
+          .seu-scroll-pane{ height:300px; overflow:hidden; border-radius:10px; }
+          .seu-birthday-card{
             background-size:cover; background-position:center;
             color:#2b1a1a;
           }
-          .mis-muted{ color:#506b85; }
+          .seu-muted{ color:#506b85; }
 
           /* About */
-          .mis-about{ background:#ffffff; }
+          .seu-about{ background:#ffffff; }
           .animated-heading{ font-size:28px; font-weight:800; color:#0047ab; margin-bottom:6px;}
           .neon-text{ font-size:20px; color:#007bff; letter-spacing:.8px; }
           .glow-background{ background:linear-gradient(145deg,#f8fbff,#eef5ff); border-radius:18px; box-shadow:inset 0 0 20px rgba(255,255,255,.6), 0 8px 25px rgba(0,0,0,.06);}
-          .mis-about-visual{ position:relative; border-radius:22px; overflow:hidden; box-shadow:0 12px 28px rgba(0,0,0,.10);}
-          .mis-about-img{ height:360px; background-size:cover; background-position:center; }
+          .seu-about-visual{ position:relative; border-radius:22px; overflow:hidden; box-shadow:0 12px 28px rgba(0,0,0,.10);}
+          .seu-about-img{ height:360px; background-size:cover; background-position:center; }
 
           /* Facilities */
           section.s_school_facilities{ background:linear-gradient(180deg,#f5f9ff 0%, #eaf2ff 100%); }
@@ -1235,14 +1230,14 @@ document.addEventListener("DOMContentLoaded", () => {
           .facility-card p{ font-size:15px; color:#4b5d73; line-height:1.6; }
 
           /* Team */
-          .mis-profile-card{
+          .seu-profile-card{
             display:flex; gap:18px; align-items:center; background:rgba(255,255,255,.6);
             border-radius:18px; padding:18px; box-shadow:0 8px 20px rgba(0,0,0,.08); backdrop-filter: blur(10px);
           }
-          .mis-profile-card.wide{ padding:20px 24px; }
-          .mis-profile-photo img{ width:160px; height:160px; object-fit:cover; border-radius:24px; box-shadow:0 10px 24px rgba(0,0,0,.12);}
-          .mis-profile-info h4{ color:#0e3b70; margin-bottom:6px; }
-          .mis-profile-info p{ color:#4b5d73; margin:0; }
+          .seu-profile-card.wide{ padding:20px 24px; }
+          .seu-profile-photo img{ width:160px; height:160px; object-fit:cover; border-radius:24px; box-shadow:0 10px 24px rgba(0,0,0,.12);}
+          .seu-profile-info h4{ color:#0e3b70; margin-bottom:6px; }
+          .seu-profile-info p{ color:#4b5d73; margin:0; }
 
           /* Timeline */
           .s_timeline .card-title{ color:#0e3b70; font-weight:700; }

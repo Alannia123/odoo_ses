@@ -2,7 +2,7 @@
 <odoo>
 
 <!--    Privacy Policye-->
-    <template id="ala_school_privacy_policy" name="Student Performance MIS">
+    <template id="ala_school_privacy_policy" name="Student Performance St. Eugene">
         <t t-call="website.layout">
             <section
                     class="s_title parallax s_parallax_is_fixed bg-black-50 pt24 pb24"
@@ -14,7 +14,7 @@
                 </span>
                 <div class="o_we_bg_filter bg-black-50"/>
                 <div class="container">
-                    <h1>Privacy Policy | St.Eugene  School</h1>
+                    <h1>Privacy Policy | St. Eugene  School</h1>
                 </div>
           </section>
 
@@ -37,7 +37,7 @@
 
 <!--  <p><strong>Effective Date:</strong> July 13, 2025</p>-->
 
-  <p>Mary Immaculate English School ("we", "our", or "us") operates the Android mobile application and the website <a href="https://misbasirhat.com" style="color:#0077cc;">https://misbasirhat.com</a> (the "Services").</p>
+  <p>St. Eugene CBSE School ("we", "our", or "us") operates the Android mobile application and the website <a href="https://www.steugeneschool.edu.in" style="color:#0077cc;">https://www.steugeneschool.edu.in</a> (the "Services").</p>
 
   <p>This page is used to inform visitors and app users regarding our policies with the collection, use, and disclosure of Personal Information.</p>
 
@@ -63,9 +63,9 @@
   <h4 style="margin-top: 24px;">Contact Us</h4>
   <p>If you have any questions about our Privacy Policy, please contact us at:</p>
   <p>
-    Mary Immaculate English School<br/>
-    Basirhat, West Bengal, India<br/>
-    Email: <a href="mailto:misbasirhatomi@gmail.com" style="color:#0077cc;">misbasirhatomi@gmail.com</a>
+    St. Eugene CBSE School<br/>
+    [School Address], Tamil Nadu, India<br/> <!-- SEC-TODO: add address -->
+    Email: <a href="mailto:info@steugeneschool.edu.in" style="color:#0077cc;">info@steugeneschool.edu.in</a>
   </p>
 </div>
 

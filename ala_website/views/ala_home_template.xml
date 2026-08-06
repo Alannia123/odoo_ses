@@ -8,9 +8,9 @@
         </t>
 <!--          BANER-->
        <t t-if="banner">
-          <div class="mis-banner-strip">
-            <div class="mis-banner-box">
-              <marquee class="mis-banner-text"
+          <div class="seu-banner-strip">
+            <div class="seu-banner-box">
+              <marquee class="seu-banner-text"
                        onmouseover="this.stop();"
                        onmouseout="this.start();">
                 <t t-out="banner.info"/>
@@ -20,16 +20,16 @@
         </t>
         <style>
               /* =============================
-   ✨ NEW MIS RUNNING BANNER
+   ✨ NEW St. Eugene RUNNING BANNER
    ============================= */
 
-.mis-banner-strip {
+.seu-banner-strip {
     width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 
-.mis-banner-box {
+.seu-banner-box {
     background: linear-gradient(90deg, #d8efe8, #f4faf7);
     border-top: 2px solid #97c9b8;
     border-bottom: 2px solid #97c9b8;
@@ -38,7 +38,7 @@
 }
 
 /* Soft moving pattern overlay */
-.mis-banner-box::before {
+.seu-banner-box::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -53,7 +53,7 @@
 }
 
 /* Marquee Text Style */
-.mis-banner-text {
+.seu-banner-text {
     font-size: 18px;
     font-weight: 700;
     color: #cc3300;
@@ -63,8 +63,8 @@
 }
 
 /* Add glow animation to message */
-.mis-banner-text span,
-.mis-banner-text t {
+.seu-banner-text span,
+.seu-banner-text t {
     animation: shineText 3s ease-in-out infinite;
 }
 
@@ -76,7 +76,7 @@
 
 /* Mobile Responsive Fix */
 @media (max-width: 768px) {
-    .mis-banner-text {
+    .seu-banner-text {
         font-size: 16px !important;
     }
 }
@@ -95,7 +95,7 @@
               </iframe>
               <div class="video-overlay"></div>
               <div class="video-caption-sc">
-                <h3>🎓 St.Eugene CBSE School</h3>
+                <h3>🎓 St. Eugene CBSE School</h3>
                 <p>Where Knowledge Meets Values</p>
               </div>
             </div>
@@ -108,17 +108,17 @@
         <span></span><span></span><span></span><span></span><span></span>
         <span></span><span></span>
     </div>
-            <div class="card mis-frost-card ">
+            <div class="card seu-frost-card ">
               <div class="card-body">
-            <h4 class="mis-section-title announcement-title">
+            <h4 class="seu-section-title announcement-title">
                 <img src="/ala_website/static/src/img/announce.png" class="announce-png-icon"/>
                 Announcements
             </h4>
 
 
 
-                <div class="mis-divider"></div>
-                <div class="mis-scroll-pane">
+                <div class="seu-divider"></div>
+                <div class="seu-scroll-pane">
                   <marquee width="100%" height="100%" behavior="scroll" direction="up" scrollamount="3"
                            onmouseover="this.stop();" onmouseout="this.start();">
                     <t t-raw="notices"/>
@@ -237,9 +237,9 @@
               0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
               100% { opacity: 1; transform: translateX(-50%) translateY(0); }
           }
-          .mis-scroll-pane{ height:380px; overflow:hidden; border-radius:10px; }
+          .seu-scroll-pane{ height:380px; overflow:hidden; border-radius:10px; }
 
-          .mis-section-title {
+          .seu-section-title {
             font-weight: 800;
             font-size: 26px;
             background: linear-gradient(90deg, #0066ff, #ff20a8);
@@ -248,7 +248,7 @@
             letter-spacing: 1px;
           }
 
-          .mis-divider {
+          .seu-divider {
             width: 100px;
             height: 4px;
             margin: 0 auto 20px;
@@ -257,7 +257,7 @@
             box-shadow: 0 0 10px rgba(0,150,255,0.4);
           }
 
-          .mis-frost-card {
+          .seu-frost-card {
             border: none;
             border-radius: 25px;
             background: rgba(255, 255, 255, 0.35);
@@ -347,16 +347,16 @@
 
 
 
-  .mis-scroll-pane {
+  .seu-scroll-pane {
       height: 150px !important;
       overflow: hidden !important;
   }
 
-  .mis-section-title {
+  .seu-section-title {
       font-size: 20px !important;
   }
 
-  .mis-divider {
+  .seu-divider {
       margin-bottom: 12px !important;
   }
 
@@ -369,7 +369,7 @@
 
 <!--          Title-->
 
-          <section class="mis-hero-second">
+          <section class="seu-hero-second">
     <div class="glass-box fade-in">
         <h2 class="hero-title">
             Change the World with
@@ -461,7 +461,7 @@
 }
 
 /* SECTION BACKGROUND */
-.mis-hero-second {
+.seu-hero-second {
     position: relative;
 <!--    padding: 40px 0 60px;-->
     background: linear-gradient(180deg, #0074B7 0%, #005A93 100%);
@@ -469,8 +469,8 @@
 }
 
 /* ---------- FLOATING PARTICLES ---------- */
-.mis-hero-second::before,
-.mis-hero-second::after {
+.seu-hero-second::before,
+.seu-hero-second::after {
     content: "";
     position: absolute;
     width: 12px;
@@ -479,7 +479,7 @@
     border-radius: 50%;
     animation: floatParticles 6s infinite linear;
 }
-.mis-hero-second::after {
+.seu-hero-second::after {
     width: 8px;
     height: 8px;
     left: 80%;
@@ -644,7 +644,7 @@
 </style>
 
 <!--Slide-->
-       <section class="mis-premium-layout smooth-connect-bg bubble-area">
+       <section class="seu-premium-layout smooth-connect-bg bubble-area">
 
     <!-- 🌟 Bubble Layer -->
     <div class="bubbles">
@@ -656,16 +656,16 @@
   <!-- LEFT SCHOOL FEATURES -->
   <div class="left-features">
 
-    <div class="card mis-birthday-glass h-100 text-center">
+    <div class="card seu-birthday-glass h-100 text-center">
           <div class="card-body position-relative birthday-body">
-            <h5 class="mis-section-title">Birthdays</h5>
-            <div class="mis-divider"></div>
-            <p class="mis-muted small mb-3">Today: <t t-out="today_date"/></p>
+            <h5 class="seu-section-title">Birthdays</h5>
+            <div class="seu-divider"></div>
+            <p class="seu-muted small mb-3">Today: <t t-out="today_date"/></p>
             <t t-if="not today_births">
               <b class="text-light">No birthdays today 🎉</b>
             </t>
             <t t-else="">
-              <div class="mis-scroll-pane-birth">
+              <div class="seu-scroll-pane-birth">
                 <marquee width="100%" height="100%" behavior="scroll" direction="up" scrollamount="3"
                          onmouseover="this.stop();" onmouseout="this.start();">
 
@@ -756,7 +756,7 @@
    🔥 FIX: BIRTHDAY + CUBE SECTION SAME HEIGHT (450px)
    ============================================================ */
 
-.mis-premium-layout {
+.seu-premium-layout {
     display: flex;
     justify-content: space-between;
     align-items: stretch !important;
@@ -777,7 +777,7 @@
 
 
 /* SCROLL AREA FIX */
-.mis-scroll-pane-birth {
+.seu-scroll-pane-birth {
     height: 390px !important;
     overflow: hidden;
     border-radius: 10px;
@@ -816,7 +816,7 @@
 @media (max-width: 768px) {
 
     /* Main layout becomes vertical */
-    .mis-premium-layout {
+    .seu-premium-layout {
         flex-direction: column;
         height: auto !important;
         gap: 20px;
@@ -830,7 +830,7 @@
         height: auto !important;
     }
 
-    .mis-birthday-glass {
+    .seu-birthday-glass {
         height: auto !important;
         padding: 15px !important;
     }
@@ -840,7 +840,7 @@
     }
 
     /* Reduce scroll height */
-    .mis-scroll-pane-birth {
+    .seu-scroll-pane-birth {
         height: 220px !important;
     }
 
@@ -901,7 +901,7 @@
 }
 
 <!--/* Make wave and second section visually merge */-->
-<!--.mis-hero-section {-->
+<!--.seu-hero-section {-->
 <!--  padding-bottom: 0 !important;-->
 <!--  margin-bottom: -5px; /* remove gap */-->
 <!--}-->
@@ -934,7 +934,7 @@
 
 
             /* ---------------------- HERO SECTION ---------------------- */
-.mis-hero-section {
+.seu-hero-section {
   width: 100%;
   padding: 15px 20px 0px;
   position: relative;
@@ -943,7 +943,7 @@
   background: linear-gradient(135deg,#015a8f,#007bc7,#00a6ff);
 }
 
-.mis-hero-section .hero-wave {
+.seu-hero-section .hero-wave {
   margin-top: -25px;   /* pull wave up */
 }
 
@@ -1073,7 +1073,7 @@
 
 
         /* LAYOUT STRUCTURE */
-        .mis-premium-layout {
+        .seu-premium-layout {
           display: flex;
           justify-content: space-between;
           align-items: center !important;
@@ -1195,7 +1195,7 @@
         padding: 10px !important;
     }
 
-    .mis-birthday-glass {
+    .seu-birthday-glass {
         height: auto !important;
     }
 
@@ -1203,14 +1203,14 @@
         padding: 15px !important;
     }
 
-    .mis-scroll-pane-birth {
+    .seu-scroll-pane-birth {
         height: 220px !important; /* fits small screen */
     }
 }
 
 
               @media(max-width:768px){
-    .mis-premium-layout {
+    .seu-premium-layout {
         flex-direction: column !important;
         gap: 15px !important;
         height: auto !important;
@@ -1234,7 +1234,7 @@
    🎂 BIRTHDAY CARD — CLEAN FINAL VERSION
 ------------------------------------------- */
 
-.mis-birthday-glass {
+.seu-birthday-glass {
     position: relative;
     overflow: hidden;
     border-radius: 18px;
@@ -1251,7 +1251,7 @@
 }
 
 /* Background image layer */
-.mis-birthday-glass::before {
+.seu-birthday-glass::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -1261,7 +1261,7 @@
 }
 
 /* Additional soft overlay tint for blending */
-.mis-birthday-glass::after {
+.seu-birthday-glass::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -1270,13 +1270,13 @@
 }
 
 /* Ensure card content stays above */
-.mis-birthday-glass .card-body {
+.seu-birthday-glass .card-body {
     position: relative;
     z-index: 3;
 }
 
 /* Scroll area height fix */
-.mis-scroll-pane-birth {
+.seu-scroll-pane-birth {
     height: 390px !important;
     overflow: hidden;
     border-radius: 10px;
@@ -1288,7 +1288,7 @@
     100% { transform: translateY(120px) rotate(12deg); opacity: 0; }
 }
 
-.mis-birthday-glass .confetti {
+.seu-birthday-glass .confetti {
     position: absolute;
     font-size: 28px;
     left: 10px;
@@ -1393,7 +1393,7 @@
 <!-- ============================
      🌟 EVENT PHOTO SLIDER
 ============================== -->
-<section class="mis-event-slider-section">
+<section class="seu-event-slider-section">
     <div class="event-header-wrapper">
         <h2 class="event-header">
             <span class="event-icon">🎉</span>
@@ -1402,8 +1402,8 @@
     </div>
 
     <!-- 🔵 TOP ROW SLIDING RIGHT -->
-    <div class="mis-row slide-right">
-        <div class="mis-track">
+    <div class="seu-row slide-right">
+        <div class="seu-track">
             <t t-set="photos"
                                t-value="request.env['ala.program.gallery.aws.url']
                                         .sudo()
@@ -1412,36 +1412,36 @@
 
             <!-- Normal order -->
             <t t-foreach="photos" t-as="photo">
-                <div class="mis-item">
-                    <img t-att-src="photo.url" class="mis-img" loading="lazy"/>
+                <div class="seu-item">
+                    <img t-att-src="photo.url" class="seu-img" loading="lazy"/>
                 </div>
             </t>
 
             <!-- Duplicate -->
             <t t-foreach="photos" t-as="photo">
-                <div class="mis-item">
-                    <img t-att-src="photo.url" class="mis-img" loading="lazy"/>
+                <div class="seu-item">
+                    <img t-att-src="photo.url" class="seu-img" loading="lazy"/>
                 </div>
             </t>
         </div>
     </div>
 
     <!-- 🔵 BOTTOM ROW SLIDING LEFT (REVERSED ORDER) -->
-    <div class="mis-row slide-left">
-        <div class="mis-track">
+    <div class="seu-row slide-left">
+        <div class="seu-track">
             <t t-set="rev_photos" t-value="photos[::-1]"/>
 
             <!-- Reversed -->
             <t t-foreach="rev_photos" t-as="photo">
-                <div class="mis-item">
-                    <img t-att-src="photo.url" class="mis-img" loading="lazy"/>
+                <div class="seu-item">
+                    <img t-att-src="photo.url" class="seu-img" loading="lazy"/>
                 </div>
             </t>
 
             <!-- Duplicate reversed -->
             <t t-foreach="rev_photos" t-as="photo">
-                <div class="mis-item">
-                    <img t-att-src="photo.url" class="mis-img" loading="lazy"/>
+                <div class="seu-item">
+                    <img t-att-src="photo.url" class="seu-img" loading="lazy"/>
                 </div>
             </t>
         </div>
@@ -1453,14 +1453,14 @@
           <style>
 
             /* FORCE FLEX LAYOUT */
-.mis-event-slider-section .mis-row .mis-track {
+.seu-event-slider-section .seu-row .seu-track {
     display: flex !important;
     gap: 16px;
     width: max-content;
 }
 
 /* EXACTLY 6 TILES VISIBLE */
-.mis-event-slider-section .mis-row .mis-track .mis-item {
+.seu-event-slider-section .seu-row .seu-track .seu-item {
     box-sizing: border-box;
 <!--    flex: 0 0 calc(100% / 6) !important;-->
 <!--    max-width: calc(100% / 6) !important;-->
@@ -1473,7 +1473,7 @@
 }
 
 /* IMAGE FULLY VISIBLE INSIDE TILE */
-.mis-event-slider-section .mis-row .mis-track .mis-item .mis-img {
+.seu-event-slider-section .seu-row .seu-track .seu-item .seu-img {
     width: 100%;
     height: 160px;
     object-fit: contain;      /* full image, no crop */
@@ -1482,13 +1482,13 @@
     transition: 0.3s ease;
 }
 
-.mis-event-slider-section .mis-row .mis-track .mis-item .mis-img:hover {
+.seu-event-slider-section .seu-row .seu-track .seu-item .seu-img:hover {
     transform: scale(1.06);
 }
 
 
 /* IMAGE FULLY VISIBLE IN TILE */
-.mis-img {
+.seu-img {
     width: 100%;
     height: 160px;
     object-fit: contain;     /* 👈 FULL IMAGE VISIBLE */
@@ -1497,19 +1497,19 @@
     transition: 0.3s ease;
 }
 
-.mis-img:hover {
+.seu-img:hover {
     transform: scale(1.06);
 }
 
 /* Animation */
-.slide-right .mis-track {
+.slide-right .seu-track {
     animation: slideRight 40s linear infinite;
 }
-.slide-left .mis-track {
+.slide-left .seu-track {
     animation: slideLeft 40s linear infinite;
 }
 
-.mis-row:hover .mis-track {
+.seu-row:hover .seu-track {
     animation-play-state: paused !important;
 }
 
@@ -1526,13 +1526,13 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-    .mis-item { flex: 0 0 calc(100% / 3); }
-    .mis-img { height: 130px; }
+    .seu-item { flex: 0 0 calc(100% / 3); }
+    .seu-img { height: 130px; }
 }
 
 @media (max-width: 480px) {
-    .mis-item { flex: 0 0 100%; }
-    .mis-img { height: 150px; }
+    .seu-item { flex: 0 0 100%; }
+    .seu-img { height: 150px; }
 }
 
 
@@ -1540,11 +1540,11 @@
           </style>
 
 
-<!--          About MIS-->
+<!--          About St. Eugene-->
 
 
 
-<section class="mis-about">
+<section class="seu-about">
   <div class="container">
 
     <!-- HEADING -->
@@ -1563,13 +1563,13 @@
 
           <div class="about-inner">
             <p>
-              We are delighted to welcome you to St. Anne's Convent School, Chotojagulia. Established in 2018, our school is proudly owned by the Society of Sisters of St. Anne, Chennai, a body registered under the Society Registration Act of 1860.
-
-As a Catholic educational institution conducted by the Sisters of St. Anne, Chotojagulia, we are a branch of the Society of Sisters of St. Anne. This esteemed Society is dedicated to educational service throughout India, working through numerous institutions to provide quality education and foster holistic development.
+              We are delighted to welcome you to St. Eugene CBSE School - a new English-medium, co-educational school opening for the academic year 2027-28.
+              <br/><br/>
+              The campus is being purpose-built for the CBSE curriculum: bright classrooms, science and computer laboratories, a library, and real space for sport, music and art. Our founding batch will be admitted to LKG, UKG and Classes I to V, and the school will grow by one class each year until Class XII.
             </p>
 
             <p>
-              We look forward to a year filled with learning, growth, and achievement. Together, we aim to uphold the values and vision of our founding Society, ensuring that every student thrives in a nurturing and academically rigorous environment.
+              Joining a first batch means small classes, teachers who know every child by name, and a genuine hand in shaping the traditions this school will carry for decades. Admission is open to all children irrespective of caste, creed or community.
             </p>
           </div>
 
@@ -1587,7 +1587,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
           </iframe>
 
           <div class="about-video-caption">
-            🎓 Mary Immaculate School — Values &amp; Excellence
+            🎓 St. Eugene CBSE School — Values &amp; Excellence
           </div>
 
         </div>
@@ -1602,7 +1602,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
           <style>
               /* SECTION BACKGROUND */
-.mis-about {
+.seu-about {
   padding: 8px 0;
   background: #7085a3;
 }
@@ -1708,6 +1708,159 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
 
 
+
+        <!-- ========== Admissions: Opening 2027-28 ========== -->
+        <!-- SEC-TODO: confirm every date below with the Management Committee before launch -->
+        <t t-set="opening_year" t-value="'2027-28'"/>
+        <section class="seu-admissions">
+          <div class="container">
+
+            <div class="event-header-wrapper">
+              <h2 class="event-header">
+                <span class="event-title-ocean" style="color:#a5c0cc;">Opening <t t-esc="opening_year"/></span>
+              </h2>
+            </div>
+
+            <div class="seu-adm-badge-wrap">
+              <div class="seu-adm-badge">
+                <span class="seu-adm-dot"></span> Now accepting applications for our founding batch
+              </div>
+            </div>
+
+            <p class="seu-adm-lead">
+              St. Eugene CBSE School welcomes its first students in <b>June 2027</b>. The founding
+              batch is admitted to LKG, UKG and Classes I to V, and the school grows by one class
+              each year until Class XII &#8212; so the children who start with us can finish with us.
+            </p>
+
+            <!-- Key facts -->
+            <div class="row g-4 seu-adm-facts">
+              <div class="col-md-3 col-6">
+                <div class="seu-adm-card">
+                  <h3>LKG &#8211; V</h3>
+                  <p>Classes offered in the first session</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="seu-adm-card">
+                  <h3>CBSE</h3>
+                  <p>English medium, co-educational</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="seu-adm-card">
+                  <h3>June 2027</h3>
+                  <p>First academic session begins</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="seu-adm-card">
+                  <h3>Limited</h3>
+                  <p>Small founding classes by design</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="seu-adm-timeline">
+              <h4 class="seu-adm-subhead">Admission timeline</h4>
+              <ul>
+                <li><span>Sep 2026</span> Applications open online</li>
+                <li><span>Nov 2026</span> Campus open days for parents</li>
+                <li><span>Jan 2027</span> Parent interaction &amp; registration</li>
+                <li><span>Feb 2027</span> First list of selected students</li>
+                <li><span>Mar 2027</span> Fee payment &amp; confirmation of seat</li>
+                <li><span>May 2027</span> Orientation for new parents</li>
+                <li><span>Jun 2027</span> First academic session begins</li>
+              </ul>
+              <p class="seu-adm-note">
+                Age as on 31 March 2027 &#8212; LKG: 3+ years, UKG: 4+ years, Class I: 5+ years.
+                There is no written entrance test for the primary classes; admission is by a short,
+                informal interaction with the child and parents. Dates are indicative and will be
+                confirmed here before applications open.
+              </p>
+              <div class="seu-adm-actions">
+                <a href="/applyonline" class="seu-adm-btn">Apply Online</a>
+                <a href="/prospectus" class="seu-adm-btn ghost">Read the Prospectus</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <style>
+        .seu-admissions { padding: 40px 0; background: #7085a3; }
+        .seu-adm-badge-wrap { text-align: center; }
+        .seu-adm-badge {
+            display: inline-flex; align-items: center; gap: 9px;
+            margin: 0 0 18px; padding: 7px 16px;
+            background: rgba(255,255,255,0.18);
+            border: 1px solid rgba(255,255,255,0.35);
+            border-radius: 999px; color: #fff; font-weight: 600; font-size: 14px;
+        }
+        .seu-adm-dot {
+            width: 9px; height: 9px; border-radius: 50%; background: #7CFFB2;
+            margin-right: 9px; flex: 0 0 auto;   /* fallback where flex gap is unsupported */
+            box-shadow: 0 0 0 0 rgba(124,255,178,0.7);
+            animation: seuPulse 2s infinite;
+        }
+        @keyframes seuPulse {
+            0%   { box-shadow: 0 0 0 0 rgba(124,255,178,0.7); }
+            70%  { box-shadow: 0 0 0 12px rgba(124,255,178,0); }
+            100% { box-shadow: 0 0 0 0 rgba(124,255,178,0); }
+        }
+        .seu-adm-lead {
+            max-width: 820px; margin: 0 auto 28px; text-align: center;
+            color: #f2f6fa; font-size: 17px; line-height: 1.75;
+        }
+        .seu-adm-card {
+            height: 100%; padding: 22px 16px; text-align: center; border-radius: 16px;
+            background: rgba(255,255,255,0.16);
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.32);
+            box-shadow: 0 6px 26px rgba(0,0,0,0.14);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+        .seu-adm-card:hover { transform: translateY(-6px); box-shadow: 0 14px 34px rgba(0,0,0,0.22); }
+        .seu-adm-card h3 { margin: 0 0 6px; font-size: 24px; font-weight: 800; color: #ffffff; }
+        .seu-adm-card p  { margin: 0; font-size: 14px; color: #e3ebf3; line-height: 1.5; }
+
+        .seu-adm-timeline {
+            margin-top: 34px; padding: 26px 28px; border-radius: 18px;
+            background: rgba(255,255,255,0.92);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.16);
+        }
+        .seu-adm-subhead { margin: 0 0 16px; font-size: 20px; font-weight: 800; color: #2f4460; }
+        .seu-adm-timeline ul { list-style: none; margin: 0; padding: 0; }
+        .seu-adm-timeline li {
+            display: flex; gap: 14px; align-items: baseline;
+            padding: 9px 0; border-bottom: 1px dashed #d3dde8;
+            font-size: 15.5px; color: #33465e;
+        }
+        .seu-adm-timeline li:last-child { border-bottom: none; }
+        .seu-adm-timeline li span {
+            flex: 0 0 96px; margin-right: 14px; font-weight: 700; color: #1f6f6f; font-size: 14px;
+        }
+        .seu-adm-note { margin: 16px 0 0; font-size: 14px; color: #5a6b80; line-height: 1.65; }
+        .seu-adm-actions { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 12px; }
+        .seu-adm-actions .seu-adm-btn { margin: 0 12px 0 0; }  /* fallback where flex gap is unsupported */
+        .seu-adm-btn {
+            display: inline-block; padding: 11px 24px; border-radius: 999px;
+            background: #1f6f6f; color: #fff !important; font-weight: 700; font-size: 15px;
+            text-decoration: none !important; transition: background .25s ease, transform .2s ease;
+        }
+        .seu-adm-btn:hover { background: #14504f; transform: translateY(-2px); }
+        .seu-adm-btn.ghost { background: transparent; color: #1f6f6f !important; border: 2px solid #1f6f6f; }
+        .seu-adm-btn.ghost:hover { background: #1f6f6f; color: #fff !important; }
+
+        @media (max-width: 768px) {
+            .seu-adm-lead { font-size: 15.5px; }
+            .seu-adm-timeline { padding: 20px 18px; }
+            .seu-adm-timeline li { flex-direction: column; gap: 2px; }
+            .seu-adm-timeline li span { flex: none; }
+        }
+        </style>
+
         <!-- ========== Facilities (Glassmorphism) ========== -->
         <section class="s_school_facilities">
           <t t-jquery="head" t-operation="prepend">
@@ -1808,7 +1961,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
   }
 
   /* Right announcements card */
-  .split-right .mis-frost-card {
+  .split-right .seu-frost-card {
       min-height: 260px !important;
   }
 
@@ -1816,7 +1969,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
 
   /* =============== HERO SECTION =============== */
-  .mis-hero-second {
+  .seu-hero-second {
       padding: 25px 10px !important;
   }
 
@@ -1839,7 +1992,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
 
   /* =============== PREMIUM LAYOUT (Birthdays + Cube) =============== */
-  .mis-premium-layout {
+  .seu-premium-layout {
       flex-direction: column !important;
       gap: 20px !important;
   }
@@ -1903,11 +2056,11 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
 
   /* =============== SPACING CLEANUP =============== */
-  .mis-divider {
+  .seu-divider {
       margin-bottom: 15px !important;
   }
 
-  .mis-section-title {
+  .seu-section-title {
       font-size: 20px !important;
   }
 
@@ -1938,62 +2091,62 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
             </h2>
         </div>
-              <p class="mis-team-subtitle">Guiding St.Eugene School with Vision &amp; Values</p>
+              <p class="seu-team-subtitle">Guiding St. Eugene CBSE School with Vision &amp; Values</p>
 
             <div class="row g-4 s_nb_column_fixed">
 
               <!-- President -->
               <div class="col-lg-6">
-                <div class="mis-profile-card">
+                <div class="seu-profile-card">
                   <t t-set="president" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'president')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(president.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="president.name"/></b></h4>
-                    <p>St.Eugene School,<br/>Duttapukur, Basirhat.<br/></p>
+                    <p>St. Eugene CBSE School<br/><!-- SEC-TODO: add campus location --></p>
                   </div>
                 </div>
               </div>
 
               <!-- Secretary -->
               <div class="col-lg-6">
-                <div class="mis-profile-card">
+                <div class="seu-profile-card">
                   <t t-set="secretary" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'secretary')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(secretary.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="secretary.name"/></b></h4>
-                    <p>St.Eugene School,<br/>Duttapukur, Barasat.<br/></p>
+                    <p>St. Eugene CBSE School<br/><!-- SEC-TODO: add campus location --></p>
                   </div>
                 </div>
               </div>
 
               <!-- Principal -->
               <div class="col-lg-6">
-                <div class="mis-profile-card">
+                <div class="seu-profile-card">
                   <t t-set="principal" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'principal')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(principal.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="principal.name"/></b></h4>
-                    <p>St.Eugene School,<br/>Duttapukur, Barasat.<br/></p>
+                    <p>St. Eugene CBSE School<br/><!-- SEC-TODO: add campus location --></p>
                   </div>
                 </div>
               </div>
 
               <!-- Manager -->
               <div class="col-lg-6">
-                <div class="mis-profile-card">
+                <div class="seu-profile-card">
                   <t t-set="manager" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'manager')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(manager.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="manager.name"/></b></h4>
-                    <p>St.Eugene School,<br/>Duttapukur, Barasat.<br/></p>
+                    <p>St. Eugene CBSE School<br/><!-- SEC-TODO: add campus location --></p>
                   </div>
                 </div>
               </div>
@@ -2002,14 +2155,14 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
               <div class="col-lg-12">
 
 
-                <div class="mis-profile-card wide">
+                <div class="seu-profile-card wide">
                   <t t-set="administrator" t-value="member_id.member_line_ids.filtered(lambda x: x.designation == 'administrator')"/>
-                  <div class="mis-profile-photo">
+                  <div class="seu-profile-photo">
                     <img t-att-src="image_data_uri(administrator.image)"/>
                   </div>
-                  <div class="mis-profile-info">
+                  <div class="seu-profile-info">
                     <h4><b><t t-esc="administrator.name"/></b></h4>
-                    <p>St.Anne's School,<br/>Duttapukur, Barasat.<br/></p>
+                    <p>St. Eugene CBSE School<br/><!-- SEC-TODO: add campus location --></p>
                   </div>
                 </div>
               </div>
@@ -2027,13 +2180,13 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
    TEAM SECTION HEADING
 =========================================== */
 
-.mis-team-header {
+.seu-team-header {
     text-align: center;
     margin-bottom: 45px;
     animation: fadeIn 1s ease-out;
 }
 
-.mis-team-title {
+.seu-team-title {
     font-size: 38px;
     font-weight: 800;
     color: #004d80;
@@ -2043,7 +2196,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
     position: relative;
 }
 
-.mis-team-title::after {
+.seu-team-title::after {
     content: "";
     width: 90px;
     height: 4px;
@@ -2054,7 +2207,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
     box-shadow: 0 0 12px rgba(0,160,255,0.6);
 }
 
-.mis-team-subtitle {
+.seu-team-subtitle {
     font-size: 16px;
     color: #d13d4d;
              font-weight:bold;
@@ -2072,7 +2225,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
    MEMBER CARDS (GLASS EFFECT)
 =========================================== */
 
-.mis-profile-card {
+.seu-profile-card {
     background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(10px);
     border-radius: 22px;
@@ -2086,13 +2239,13 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 }
 
 /* Hover animation */
-.mis-profile-card:hover {
+.seu-profile-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
 /* Photo wrapper (square centered) */
-.mis-profile-photo {
+.seu-profile-photo {
     width: 160px !important;
     height: 160px !important;
     border-radius: 22px !important;
@@ -2105,7 +2258,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 }
 
 /* Force image PERFECT fit */
-.mis-profile-photo img {
+.seu-profile-photo img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
@@ -2116,7 +2269,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 }
 
 /* TEXT DETAILS */
-.mis-profile-info h4 {
+.seu-profile-info h4 {
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 6px;
@@ -2124,7 +2277,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
-.mis-profile-info p {
+.seu-profile-info p {
     margin: 0;
     font-size: 15px;
     color: #2c3e50;
@@ -2134,7 +2287,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 /* ===========================================
    FINAL ROW (ADMIN CARD) CENTER ALIGN
 =========================================== */
-.mis-profile-card.wide {
+.seu-profile-card.wide {
     max-width: 650px;
     margin: 0 auto;
     justify-content: flex-start;
@@ -2146,35 +2299,35 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
 @media (max-width: 768px) {
 
-    .mis-team-title { font-size: 28px; }
-    .mis-team-subtitle { font-size: 14px; }
+    .seu-team-title { font-size: 28px; }
+    .seu-team-subtitle { font-size: 14px; }
 
-    .mis-profile-card {
+    .seu-profile-card {
         flex-direction: column !important;
         text-align: center;
         padding: 30px 20px !important;
     }
 
-    .mis-profile-photo {
+    .seu-profile-photo {
         width: 150px !important;
         height: 150px !important;
         margin-bottom: 12px;
     }
 
-    .mis-profile-info h4 {
+    .seu-profile-info h4 {
         font-size: 20px !important;
         color: #ffffff !important;
         text-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
 
-    .mis-profile-info p {
+    .seu-profile-info p {
         color: #e8f3ff !important;
         font-size: 14px !important;
         max-width: 260px;
         margin: auto;
     }
 
-    .mis-profile-card.wide {
+    .seu-profile-card.wide {
         max-width: 100% !important;
     }
 }
@@ -2182,7 +2335,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
              /* =============================================
    TEAM PROFILE – GLASS CARD BASE STYLE
 =============================================*/
-.mis-profile-card {
+.seu-profile-card {
     background: rgba(255, 255, 255, 0.55);
     backdrop-filter: blur(10px);
     border-radius: 22px;
@@ -2196,13 +2349,13 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
     width: 100%;
 }
 
-.mis-profile-card:hover {
+.seu-profile-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 40px rgba(0,0,0,0.12);
 }
 
 /* Photo */
-.mis-profile-photo img {
+.seu-profile-photo img {
     width: 110px;
     height: 110px;
     border-radius: 18px;
@@ -2211,14 +2364,14 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 }
 
 /* Text */
-.mis-profile-info h4 {
+.seu-profile-info h4 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 6px;
     color: #003b66;
 }
 
-.mis-profile-info p {
+.seu-profile-info p {
     font-size: 15px;
     margin: 0;
     line-height: 1.45;
@@ -2226,7 +2379,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 }
 
 /* Center the final full-width card */
-.mis-profile-card.wide {
+.seu-profile-card.wide {
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
@@ -2239,7 +2392,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 =============================================*/
 @media (max-width: 768px) {
 
-    .mis-profile-card {
+    .seu-profile-card {
         flex-direction: column !important;
         justify-content: center !important;
         text-align: center !important;
@@ -2248,7 +2401,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
         gap: 15px !important;
     }
 
-    .mis-profile-photo img {
+    .seu-profile-photo img {
         width: 150px !important;
         height: 150px !important;
         border-radius: 22px !important;
@@ -2256,14 +2409,14 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
         margin-bottom: 10px !important;
     }
 
-    .mis-profile-info h4 {
+    .seu-profile-info h4 {
         font-size: 22px !important;
         font-weight: 800 !important;
         color: #ffffff !important;
         text-shadow: 0px 3px 8px rgba(0,0,0,0.4);
     }
 
-    .mis-profile-info p {
+    .seu-profile-info p {
         font-size: 15px !important;
         color: #eef6ff !important;
         max-width: 320px !important;
@@ -2280,7 +2433,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
     }
 
     /* Final card center alignment */
-    .mis-profile-card.wide {
+    .seu-profile-card.wide {
         width: 100% !important;
         margin-left: auto !important;
         margin-right: auto !important;
@@ -2289,14 +2442,14 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
 /* Extra small devices */
 @media (max-width: 480px) {
-    .mis-profile-photo img {
+    .seu-profile-photo img {
         width: 130px !important;
         height: 130px !important;
     }
 }
 /* FIX PROFILE IMAGE DISTORTION */
 /* PERFECT SQUARE CROPPING FIX */
-.mis-profile-photo {
+.seu-profile-photo {
     width: 140px !important;
     height: 140px !important;
     border-radius: 28px !important;
@@ -2307,7 +2460,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
     background: #ddd;
 }
 
-.mis-profile-photo img {
+.seu-profile-photo img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;     /* fill + crop */
@@ -2321,7 +2474,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
 
 
-.mis-profile-photo img {
+.seu-profile-photo img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;  /* ensures square crop */
@@ -2331,13 +2484,13 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
              @media (max-width: 768px) {
     @media (max-width: 768px) {
-    .mis-profile-photo {
+    .seu-profile-photo {
         width: 160px !important;
         height: 160px !important;
     }
 }
 
-    .mis-profile-photo img {
+    .seu-profile-photo img {
         border-radius: 22px !important;
     }
 }
@@ -2352,15 +2505,15 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 
 <!--            </h2>-->
 <!--        </div>-->
-<!--        <p class="mis-timeline-sub">A legacy built on excellence, growth &amp; values</p>-->
+<!--        <p class="seu-timeline-sub">A legacy built on excellence, growth &amp; values</p>-->
 <!--          <div class="container s_timeline_line">-->
 
 <!--            <div class="s_timeline_row d-block d-md-flex flex-row">-->
 <!--              <div class="s_timeline_date"><b>2025</b></div>-->
 <!--              <div class="s_timeline_content d-flex">-->
-<!--                <div class="s_timeline_card s_card card bg-white w-100 mis-soft-card">-->
+<!--                <div class="s_timeline_card s_card card bg-white w-100 seu-soft-card">-->
 <!--                  <div class="card-body">-->
-<!--                    <h5 class="card-title">ICSE 1st Batch (Class: X)</h5>-->
+<!--                    <h5 class="card-title">CBSE 1st Batch (Class: X)</h5>-->
 <!--                  </div>-->
 <!--                </div>-->
 <!--                <i class="fa fa-1x fa-child bg-o-color-2 rounded-circle s_timeline_icon"></i>-->
@@ -2371,18 +2524,18 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 <!--            <div class="s_timeline_row d-block d-md-flex flex-row">-->
 <!--              <div class="s_timeline_date"><b>2022</b></div>-->
 <!--              <div class="s_timeline_content d-flex">-->
-<!--                <div class="s_timeline_card s_card card bg-white w-100 mis-soft-card">-->
+<!--                <div class="s_timeline_card s_card card bg-white w-100 seu-soft-card">-->
 <!--                  <div class="card-body">-->
-<!--                    <h5 class="card-title">Best School in Basirhat, North 24 PGS...</h5>-->
+<!--                    <h5 class="card-title">Admissions open for 2027-28...</h5>-->
 <!--                  </div>-->
 <!--                </div>-->
 <!--                <i class="fa fa-1x fa-graduation-cap bg-o-color-2 rounded-circle s_timeline_icon"></i>-->
 <!--              </div>-->
 <!--              <div class="s_timeline_content d-flex">-->
 <!--                <i class="fa fa-1x fa-asterisk bg-o-color-2 rounded-circle s_timeline_icon"></i>-->
-<!--                <div class="s_timeline_card s_card card bg-white w-100 mis-soft-card">-->
+<!--                <div class="s_timeline_card s_card card bg-white w-100 seu-soft-card">-->
 <!--                  <div class="card-body">-->
-<!--                    <h5 class="card-title">Affiliated to ICSE</h5>-->
+<!--                    <h5 class="card-title">Affiliated to CBSE</h5>-->
 <!--                  </div>-->
 <!--                </div>-->
 <!--              </div>-->
@@ -2391,9 +2544,9 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 <!--            <div class="s_timeline_row d-block d-md-flex flex-row-reverse">-->
 <!--              <div class="s_timeline_date"><b>2014</b></div>-->
 <!--              <div class="s_timeline_content d-flex">-->
-<!--                <div class="s_timeline_card s_card card bg-white w-100 mis-soft-card">-->
+<!--                <div class="s_timeline_card s_card card bg-white w-100 seu-soft-card">-->
 <!--                  <div class="card-body">-->
-<!--                    <h5 class="card-title">Mary Immaculate School Established</h5>-->
+<!--                    <h5 class="card-title">St. Eugene CBSE School Established</h5>-->
 <!--                  </div>-->
 <!--                </div>-->
 <!--                <i class="fa fa-1x fa-bolt bg-o-color-2 rounded-circle s_timeline_icon"></i>-->
@@ -2524,14 +2677,14 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 .social-icons img:hover{
     transform:scale(1.15);
 }
-              .mis-timeline-heading {
+              .seu-timeline-heading {
     font-size: 34px;
     font-weight: 800;
     color: #ffffff;
     text-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
-.mis-timeline-sub {
+.seu-timeline-sub {
     color: #d13d4d;
     font-size: 20px;
               font-weight:bold;
@@ -2577,7 +2730,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
 }
 
 /* Cards (Glass effect) */
-.mis-soft-card {
+.seu-soft-card {
     background: rgba(255,255,255,0.75) !important;
     backdrop-filter: blur(10px);
     border-radius: 16px;
@@ -2586,7 +2739,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
     border: none;
 }
 
-.mis-soft-card:hover {
+.seu-soft-card:hover {
     transform: translateY(-6px) scale(1.01);
     box-shadow: 0 12px 35px rgba(0,0,0,0.15);
 }
@@ -2652,7 +2805,7 @@ As a Catholic educational institution conducted by the Sisters of St. Anne, Chot
         margin-left: 10px;
     }
 
-    .mis-soft-card {
+    .seu-soft-card {
         margin-left: 20px;
     }
 }
